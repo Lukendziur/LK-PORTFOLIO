@@ -1,0 +1,15 @@
+
+{
+    "home": {
+        "navbar-structure": {
+            "home": "Inicio",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "contact": "Contacto"
+        },
+        "job-title": "Front-End Developer",
+        "name": "Lucila V. Kendziur",
+        "resume": "texto de prueba, modificar"
+
+    }
+}
