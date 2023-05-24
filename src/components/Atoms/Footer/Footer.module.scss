@@ -1,0 +1,10 @@
+@use "./../../../styles/partials/theme";
+
+.footer{
+    width: 100%;
+    height: min-content;
+    background-color: var(--primaryDark);
+    text-align: center;
+    font-weight: 500;
+    color: var(--textLight);
+}

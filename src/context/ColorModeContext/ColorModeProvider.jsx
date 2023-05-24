@@ -1,28 +1,29 @@
-import PropTypes from "prop-types";
-import ColorModeContext from "./ColorModeContext";
-import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/material/styles";
-import { useMemo, useState } from "react";
+/* eslint-disable no-unused-vars */
+import PropTypes from 'prop-types';
+import ColorModeContext from './ColorModeContext';
+import { ThemeProvider } from '@emotion/react';
+import { createTheme } from '@mui/material/styles';
+import { useMemo, useState } from 'react';
 import { teal, blueGrey, grey } from '@mui/material/colors';
 
 const ColorModeProvider = ({ children }) => {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState('light');
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
       },
     }),
     []
   );
 
   const palette = {
-    mode, 
+    mode,
     primary: {
       main: teal[500],
     },
     primaryLight: {
-      main:teal[200]
+      main: teal[200],
     },
     primaryDark: {
       main: teal[700],
@@ -31,10 +32,10 @@ const ColorModeProvider = ({ children }) => {
       main: blueGrey[500],
     },
     secondaryExtraLight: {
-      main: blueGrey[50]
+      main: blueGrey[50],
     },
     secondaryLight: {
-      main: blueGrey[200]
+      main: blueGrey[200],
     },
     secondaryDark: {
       main: blueGrey[800],
@@ -42,16 +43,14 @@ const ColorModeProvider = ({ children }) => {
     secondaryExtraDark: {
       main: blueGrey[900],
     },
-    layoutBackgroundDark: '#121212'
-    ,
-    layoutBackgroundLight: grey[50]
-    
-  }
+    layoutBackgroundDark: '#121212',
+    layoutBackgroundLight: grey[50],
+  };
 
   const theme = useMemo(
     () =>
       createTheme({
-        palette
+        palette,
       }),
     [mode]
   );

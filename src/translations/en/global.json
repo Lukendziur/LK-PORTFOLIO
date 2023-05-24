@@ -4,10 +4,10 @@
         "navbar-structure": {
             "home": "Home",
             "skills": "Skills",
-            "projects": "Proyectos",
-            "contact": "Contacto"
+            "projects": "Projects",
+            "contact": "Contact"
         },
-        "job-title": "Desarrolladora Front-End",
+        "job-title": "Front-End Developer",
         "name": "Lucila V. Kendziur",
         "resume": "texto de prueba, modificar"
 

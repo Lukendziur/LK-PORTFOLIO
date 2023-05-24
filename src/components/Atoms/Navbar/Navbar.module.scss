@@ -1,0 +1,25 @@
+@use "./../../../styles/partials/mixin";
+
+.navbar {
+    @include mixin.flex(row, center,space-between);
+    width: 100%;
+    height: fit-content;
+    padding: 10px 25px;
+
+
+    ul {
+        @include mixin.flex(row, center, flex-start, 40px);
+        text-decoration: none;
+        list-style: none;
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+            font-size: 20px;
+            font-weight: 500;
+            
+        }
+
+    }
+
+}
