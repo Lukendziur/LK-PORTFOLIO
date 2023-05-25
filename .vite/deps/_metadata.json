@@ -1,0 +1,137 @@
+{
+  "hash": "d7b27c36",
+  "browserHash": "d2ccd39f",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "fa5ae2d2",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "562cad1d",
+      "needsInterop": true
+    },
+    "react-i18next": {
+      "src": "../../node_modules/react-i18next/dist/es/index.js",
+      "file": "react-i18next.js",
+      "fileHash": "c5ff870d",
+      "needsInterop": false
+    },
+    "i18next": {
+      "src": "../../node_modules/i18next/dist/esm/i18next.js",
+      "file": "i18next.js",
+      "fileHash": "d40d54bf",
+      "needsInterop": false
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "d2b924e3",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "3618341b",
+      "needsInterop": false
+    },
+    "prop-types": {
+      "src": "../../node_modules/prop-types/index.js",
+      "file": "prop-types.js",
+      "fileHash": "a41cc4c0",
+      "needsInterop": true
+    },
+    "@emotion/react": {
+      "src": "../../node_modules/@emotion/react/dist/emotion-react.browser.esm.js",
+      "file": "@emotion_react.js",
+      "fileHash": "160facf4",
+      "needsInterop": false
+    },
+    "@mui/material/styles": {
+      "src": "../../node_modules/@mui/material/styles/index.js",
+      "file": "@mui_material_styles.js",
+      "fileHash": "dc8b9500",
+      "needsInterop": false
+    },
+    "@mui/material/colors": {
+      "src": "../../node_modules/@mui/material/colors/index.js",
+      "file": "@mui_material_colors.js",
+      "fileHash": "f3ef75bf",
+      "needsInterop": false
+    },
+    "@mui/icons-material/HomeRounded": {
+      "src": "../../node_modules/@mui/icons-material/HomeRounded.js",
+      "file": "@mui_icons-material_HomeRounded.js",
+      "fileHash": "2495bde7",
+      "needsInterop": true
+    },
+    "@mui/icons-material/PsychologyRounded": {
+      "src": "../../node_modules/@mui/icons-material/PsychologyRounded.js",
+      "file": "@mui_icons-material_PsychologyRounded.js",
+      "fileHash": "fa950041",
+      "needsInterop": true
+    },
+    "@mui/icons-material/AccountTreeRounded": {
+      "src": "../../node_modules/@mui/icons-material/AccountTreeRounded.js",
+      "file": "@mui_icons-material_AccountTreeRounded.js",
+      "fileHash": "db9d8404",
+      "needsInterop": true
+    },
+    "@mui/icons-material/SendRounded": {
+      "src": "../../node_modules/@mui/icons-material/SendRounded.js",
+      "file": "@mui_icons-material_SendRounded.js",
+      "fileHash": "e24d22e1",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-UGDIFQIZ": {
+      "file": "chunk-UGDIFQIZ.js"
+    },
+    "chunk-OV3GGD6B": {
+      "file": "chunk-OV3GGD6B.js"
+    },
+    "chunk-ZUKSYTZB": {
+      "file": "chunk-ZUKSYTZB.js"
+    },
+    "chunk-E3LBWEGA": {
+      "file": "chunk-E3LBWEGA.js"
+    },
+    "chunk-6DSJBOGS": {
+      "file": "chunk-6DSJBOGS.js"
+    },
+    "chunk-H5YIHAHW": {
+      "file": "chunk-H5YIHAHW.js"
+    },
+    "chunk-MQKX2XXE": {
+      "file": "chunk-MQKX2XXE.js"
+    },
+    "chunk-PRK46SJB": {
+      "file": "chunk-PRK46SJB.js"
+    },
+    "chunk-ZXWO5H77": {
+      "file": "chunk-ZXWO5H77.js"
+    },
+    "chunk-XMXCPDMJ": {
+      "file": "chunk-XMXCPDMJ.js"
+    },
+    "chunk-7H46EIHI": {
+      "file": "chunk-7H46EIHI.js"
+    },
+    "chunk-WD2LPL4O": {
+      "file": "chunk-WD2LPL4O.js"
+    },
+    "chunk-FLAVOKRJ": {
+      "file": "chunk-FLAVOKRJ.js"
+    },
+    "chunk-XYLSUGT6": {
+      "file": "chunk-XYLSUGT6.js"
+    },
+    "chunk-AC2VUBZ6": {
+      "file": "chunk-AC2VUBZ6.js"
+    }
+  }
+}

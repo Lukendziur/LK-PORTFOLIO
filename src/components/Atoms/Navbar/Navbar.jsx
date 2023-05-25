@@ -2,24 +2,29 @@
 import { useTheme } from '@mui/material/styles';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
-import { Button, IconButton } from '@mui/material';
+import { Button, IconButton, useMediaQuery } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 // Internal
 import ColorModeContext from '../../../context/ColorModeContext/ColorModeContext';
-import { LANGUAGES, NAVBAR_STRUCTURE } from '../../../constants/constants';
+import {
+  BREAKPOINTS,
+  LANGUAGES,
+  // LANGUAGES,
+  NAVBAR_STRUCTURE,
+} from '../../../constants/constants';
 
 // Styles
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
   const [t, i18n] = useTranslation('global');
-
   const theme = useTheme();
-  const { primaryDark } = theme.palette;
+  const isMobile = useMediaQuery(BREAKPOINTS.mobile);
   const colorMode = useContext(ColorModeContext);
+  const { primaryDark } = theme.palette;
 
   const setActiveLinkColor = (active) => {
     return { color: active && primaryDark.main };
@@ -36,17 +41,18 @@ const Navbar = () => {
               style={({ isActive }) => setActiveLinkColor(isActive)}
               className={styles.link}
             >
-              {t(navItem.i18)}
+              {isMobile ? <navItem.icon fontSize="large" /> : t(navItem.i18)}
             </NavLink>
           </li>
         ))}
       </ul>
-      <div className={styles.translationButtons}>
+      <div className={styles.actionsBar}>
         <Button
           size="large"
           aria-label="Change to Spanish"
           onClick={() => i18n.changeLanguage('es')}
-          variant={i18n.language === LANGUAGES.es ? 'contained' : ''}
+          className={styles.buttons}
+          aria-pressed={i18n.language === LANGUAGES.es}
         >
           ES
         </Button>
@@ -54,7 +60,8 @@ const Navbar = () => {
           size="large"
           aria-label="Change to English"
           onClick={() => i18n.changeLanguage('en')}
-          variant={i18n.language === LANGUAGES.en ? 'contained' : ''}
+          className={styles.buttons}
+          aria-pressed={i18n.language === LANGUAGES.en}
         >
           EN
         </Button>
@@ -64,6 +71,7 @@ const Navbar = () => {
           onClick={colorMode.toggleColorMode}
           aria-label="Change theme"
           color="inherit"
+          className={styles.buttons}
         >
           {theme.palette.mode === 'dark' ? (
             <Brightness7Icon />

@@ -1,9 +1,10 @@
 @use "./../../../styles/partials/theme";
+@use "./../../../styles/partials/variables";
 
 .footer{
     width: 100%;
     height: min-content;
-    background-color: var(--primaryDark);
+    background: var(--gradient);
     text-align: center;
     font-weight: 500;
     color: var(--textLight);

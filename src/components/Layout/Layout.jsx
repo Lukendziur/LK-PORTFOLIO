@@ -22,7 +22,7 @@ function MyApp() {
         bgcolor:
           theme.palette.mode === 'dark'
             ? theme.palette.layoutBackgroundDark
-            : theme.palette.layoutBackgroundLight, //'background.default',
+            : theme.palette.layoutBackgroundLight,
         color:
           theme.palette.mode === 'dark'
             ? theme.palette.secondaryExtraLight.main
