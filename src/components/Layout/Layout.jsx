@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom';
 import { useTheme } from '@emotion/react';
 import { Box, useMediaQuery } from '@mui/material';
 import { BREAKPOINTS } from '../../constants/constants';
-import SocialMediaBar from '../Atoms/SocialMediaBar/SocialMediaBar';
+import SocialMediaBar from '../Molecules/SocialMediaBar/SocialMediaBar';
 
 // Internal
-const Navbar = lazy(() => import('../Atoms/Navbar/Navbar'));
+const Navbar = lazy(() => import('../Molecules/Navbar/Navbar'));
 const Footer = lazy(() => import('../Atoms/Footer/Footer'));
 
 function MyApp() {
