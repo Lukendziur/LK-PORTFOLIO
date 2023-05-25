@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 // Internal
 import { ROUTES } from '../constants/constants';
 import Layout from '../components/Layout/Layout.jsx';
+import Home from '../Pages/Home/Home';
 
 const router = () => {
   return createBrowserRouter([
@@ -11,7 +12,7 @@ const router = () => {
       element: <Layout />,
       errorElement: <h1>ERROR</h1>,
       children: [
-        { path: ROUTES.HOME, element: <h1>home component</h1> },
+        { path: ROUTES.HOME, element: <Home /> },
         {
           path: ROUTES.SKILLS,
           children: [{ index: true, element: <h1>SKILLS component</h1> }],

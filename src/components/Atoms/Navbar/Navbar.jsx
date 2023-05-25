@@ -24,7 +24,7 @@ const Navbar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(BREAKPOINTS.mobile);
   const colorMode = useContext(ColorModeContext);
-  const { primaryDark } = theme.palette;
+  const { primaryDark, mode } = theme.palette;
 
   const setActiveLinkColor = (active) => {
     return { color: active && primaryDark.main };
@@ -73,11 +73,7 @@ const Navbar = () => {
           color="inherit"
           className={styles.buttons}
         >
-          {theme.palette.mode === 'dark' ? (
-            <Brightness7Icon />
-          ) : (
-            <Brightness4Icon />
-          )}
+          {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
         </IconButton>
       </div>
     </nav>

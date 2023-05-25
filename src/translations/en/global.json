@@ -1,15 +1,13 @@
-
 {
-    "home": {
-        "navbar-structure": {
-            "home": "Home",
-            "skills": "Skills",
-            "projects": "Projects",
-            "contact": "Contact"
-        },
-        "job-title": "Front-End Developer",
-        "name": "Lucila V. Kendziur",
-        "resume": "texto de prueba, modificar"
-
-    }
+  "home": {
+    "navbar-structure": {
+      "home": "Home",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "job-title": "Front-End Developer",
+    "name": "Lucila V. Kendziur",
+    "resume": "Hi! I'm Lu, a front-end developer from Argentina. I greatly enjoy developing user interfaces that are accessible to all users. I love being able to learn and share my knowledge with the team. Teamwork, code documentation, and accessibility are three things that are very important to me. "
+  }
 }

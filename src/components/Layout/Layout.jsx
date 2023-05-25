@@ -2,7 +2,8 @@
 import { lazy } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useTheme } from '@emotion/react';
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
+import { BREAKPOINTS } from '../../constants/constants';
 
 // Internal
 const Navbar = lazy(() => import('../Atoms/Navbar/Navbar'));
@@ -10,6 +11,8 @@ const Footer = lazy(() => import('../Atoms/Footer/Footer'));
 
 function MyApp() {
   const theme = useTheme();
+  const isMobile = useMediaQuery(BREAKPOINTS.mobile);
+
   // xs: un objeto donde se le puede mandar cualquier propiedad de css
   return (
     <Box
@@ -33,7 +36,20 @@ function MyApp() {
       }}
     >
       <Navbar />
-      <Outlet />
+      <div
+        style={{
+          padding: isMobile ? '10px 20px' : '10px 90px',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'flex-start',
+          flexDirection: 'column',
+          gap: '30px',
+        }}
+      >
+        <Outlet />
+      </div>
       <Footer />
     </Box>
   );
