@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { useTheme } from '@emotion/react';
 import { Box, useMediaQuery } from '@mui/material';
 import { BREAKPOINTS } from '../../constants/constants';
+import SocialMediaBar from '../Atoms/SocialMediaBar/SocialMediaBar';
 
 // Internal
 const Navbar = lazy(() => import('../Atoms/Navbar/Navbar'));
@@ -36,6 +37,7 @@ function MyApp() {
       }}
     >
       <Navbar />
+      <SocialMediaBar />
       <div
         style={{
           padding: isMobile ? '10px 20px' : '10px 90px',

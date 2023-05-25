@@ -1,0 +1,55 @@
+@use "./../../../styles/partials/mixin";
+@use "./../../../styles/partials/variables";
+.bar{
+    @include mixin.flex(column, space-around, center, 30px);
+    align-items: space-around;
+    gap: 11px;
+    justify-content: center;
+    background: var(--gradient);
+    width: 43px;
+    height: 169px;
+    border-radius: 0px 73px 73px 0px;
+    position: absolute;
+    left: 0;
+    top: 92px;
+    color: white;
+    .button {
+        padding: 0;
+        .link{
+            width: 40px;
+            svg{
+                font-size: 30px;
+                color: var(--secondaryExtraLight);
+            }
+        }
+    }
+
+    /* Tablet - Desktop */
+    @media only screen and (min-width: map_get(variables.$breakpoints, "min-tablet")) {
+
+        @include mixin.flex(column, space-around, center, 30px);
+        background: var(--gradient);
+        width: 48px;
+        height: 222px;
+        border-radius: 0px 73px 73px 0px;
+        position: absolute;
+        left: 0;
+        top: 311px;
+        color: white;
+        .button {
+            padding: 0;
+            .link{
+                width: 40px;
+                svg{
+                    font-size: 40px;
+                    color: var(--secondaryExtraLight);
+                }
+            }
+        }
+
+    }
+
+
+}
+
+

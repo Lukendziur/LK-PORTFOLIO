@@ -19,13 +19,17 @@ const Home = () => {
     <>
       <section className={styles.home}>
         <div className={styles.about}>
-          <Typography variant="h4" fontSize={24}>
+          <Typography
+            variant="h4"
+            fontSize={24}
+            maxWidth={isMobile ? 'initial' : 364}
+          >
             {t('home.job-title')}
           </Typography>
           <Typography
             variant="h1"
             fontWeight={600}
-            maxWidth={364}
+            maxWidth={isMobile ? 'initial' : 364}
             fontSize={isMobile ? '4rem' : '6rem'}
           >
             {t('home.name')}

@@ -1,4 +1,8 @@
 {
+  "globals": {
+    "tooltip-linkedin": "LinkedIn",
+    "tooltip-download-cv": "Descargar CV"
+  },
   "home": {
     "navbar-structure": {
       "home": "Inicio",
