@@ -1,0 +1,46 @@
+.mobileImage{
+    width: 100%;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 389px;
+    display: flex;
+    align-self: center;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+  .tablet {
+    width: 389px;
+    height: 491px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+  }
+  .desktop {
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -207px;
+    right: 134px;
+    width: 255px;
+    height: 172px;
+    position: relative;
+
+  }
+  .mobile {
+    width: 115px;
+    height: 258px;
+    position: relative;
+    left: 72px;
+    bottom: -131px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}

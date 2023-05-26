@@ -26,7 +26,7 @@ const router = () => {
             { index: true, element: <Project /> },
             {
               path: ROUTES.PROJECT_DETAIL,
-              element: <h1>project dynamic component</h1>,
+              element: <Project />,
             },
           ],
         },

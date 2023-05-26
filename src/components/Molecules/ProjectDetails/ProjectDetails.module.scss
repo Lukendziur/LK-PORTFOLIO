@@ -1,0 +1,39 @@
+@use './../../../styles/partials/variables';
+@use './../../../styles/partials/mixin';
+
+
+/* MOBILE FIRST */
+.container{
+    @include mixin.flex(column, unset, unset, 40px);
+    width: 100%;
+    text-align: initial;
+    padding-bottom: 20px;
+
+.buttonContainer{
+    @include mixin.flex(row, unset, unset, 10px);
+
+    .button{
+        background: var(--gradient);
+        color: var(--secondaryExtraLight);
+        border-radius: 30px;
+        padding: 10px;
+        width: 100px;
+        transition: all 0.5s ease-out;
+
+    }
+    
+    .button:hover{
+        opacity: 0.8;
+    }
+}    
+/* DESKTOP */
+
+@media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
+    width: 50%;
+
+    
+    
+  }
+
+ 
+}
