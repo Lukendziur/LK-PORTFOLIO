@@ -28,6 +28,9 @@ const ColorModeProvider = ({ children }) => {
       primaryDark: {
         main: '#007cc5',
       },
+      secondary: {
+        main: blueGrey[500],
+      },
       secondaryExtraLight: {
         main: blueGrey[50],
       },

@@ -12,6 +12,12 @@
     },
     "job-title": "Desarrolladora Front-End",
     "name": "Lucila V. Kendziur",
-    "resume": "Hola! Soy Lu, front end developer de Argentina. Disfruto mucho desarrollando interfaces de usuario accesibles a todos los usuarios. Me encanta poder aprender y compartir mis conocimientos con el equipo. El trabajo en equipo, la documentación del código y la accesibilidad son tres cosas muy importantes para mi."
+    "resume": "Hola! Soy Lu, front end developer de Argentina. Disfruto mucho desarrollando interfaces de usuario accesibles a todos los usuarios. Me encanta poder aprender y compartir mis conocimientos con el equipo. El trabajo en equipo, la documentación del código y la accesibilidad son tres cosas muy importantes para mi.",
+    "card-title-1": "DATO CURIOSO",
+    "card-title-2": "OTROS DATOS",
+    "card-title-3": "SOBRE MI",
+    "card-description-1": "Además de ser programadora, soy Licenciada en Ciencia Política por la Universidad Nacional de Rosario.",
+    "card-description-2": "Comencé mi carrera en sistemas accidentalmente en la Universidad, cuando en un proyecto grupal hice la parte funcional de una app.",
+    "card-description-3": "Me gustan mucho los gatos y tengo dos. Además me encanta practicar trekking y trabajar en equipo."
   }
 }

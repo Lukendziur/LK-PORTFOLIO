@@ -25,6 +25,11 @@
             background: var(--gradient);
             border-radius: 80px;
 
+            img{
+                width: 100%;
+                max-width: 367px;
+            }
+
 
         }
     }
@@ -58,25 +63,12 @@
                 position: absolute;
                 right: 0;
                 top: 121px;
+                img{
+                    max-width: 500px;
+                }
             }
         }
     }
 
 }
 
-.cardsContainer{
-display: none;
-
-    @media only screen and (min-width: map_get(variables.$breakpoints, "tablet")) {
-        @include mixin.flex(row, unset, space-around, 50px);
-        width: 100%;
-    
-        
-        .paper{
-            width: 374px;
-            height: 120px;
-            z-index: 1;    
-        }
-
-    }
-}

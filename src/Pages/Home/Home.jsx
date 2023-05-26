@@ -1,11 +1,12 @@
-/* eslint-disable no-unused-vars */
 // External
-import { Chip, Divider, Paper, Typography, useMediaQuery } from '@mui/material';
+import { Chip, Divider, Typography, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import ComputerRoundedIcon from '@mui/icons-material/ComputerRounded';
 import { useTheme } from '@emotion/react';
 // Internal
+import PaperCards from '../../components/Molecules/PaperCards/PaperCards';
 import { BREAKPOINTS } from '../../constants/constants';
+import Avatar from './../../assets/avatar-new1.png';
 
 // Styles
 import styles from './Home.module.scss';
@@ -52,29 +53,12 @@ const Home = () => {
           </Typography>
         </div>
         <div className={styles.visual}>
-          <div className={styles.userBg}></div>
+          <div className={styles.userBg}>
+            <img src={Avatar} alt="Avatar" />
+          </div>
         </div>
       </section>
-      <section className={styles.cardsContainer}>
-        <Paper
-          className={styles.paper}
-          elevation={24}
-          variant="elevation"
-          sx={{ borderRadius: ' 146px' }}
-        />
-        <Paper
-          className={styles.paper}
-          elevation={24}
-          variant="elevation"
-          sx={{ borderRadius: ' 146px' }}
-        />
-        <Paper
-          className={styles.paper}
-          elevation={24}
-          variant="elevation"
-          sx={{ borderRadius: ' 146px' }}
-        />
-      </section>
+      <PaperCards />
     </>
   );
 };

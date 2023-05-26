@@ -1,0 +1,33 @@
+@use "./../../../styles/partials/variables";
+@use "./../../../styles/partials/mixin";
+.cardsContainer{
+    display: none;
+    
+        @media only screen and (min-width: map_get(variables.$breakpoints, "tablet")) {
+            @include mixin.flex(row, unset, space-around, 15px);
+            width: 100%;
+        
+            
+            .paper{
+                width: 455px;
+                height: 120px;
+                z-index: 1;   
+            @include mixin.flex(unset, flex-start, unset, 5px);
+
+            .titles{
+                padding-top: 10px;
+            }
+
+                
+                svg{
+                    font-size: 50px;
+                    align-self: center;
+                }
+                // img {
+                //     width: 99px;
+                //     height: 91px;
+                // }
+            }
+    
+        }
+    }

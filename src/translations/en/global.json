@@ -12,6 +12,12 @@
     },
     "job-title": "Front-End Developer",
     "name": "Lucila V. Kendziur",
-    "resume": "Hi! I'm Lu, a front-end developer from Argentina. I greatly enjoy developing user interfaces that are accessible to all users. I love being able to learn and share my knowledge with the team. Teamwork, code documentation, and accessibility are three things that are very important to me. "
+    "resume": "Hi! I'm Lu, a front-end developer from Argentina. I greatly enjoy developing user interfaces that are accessible to all users. I love being able to learn and share my knowledge with the team. Teamwork, code documentation, and accessibility are three things that are very important to me. ",
+    "card-title-1": "FUN FACT",
+    "card-title-2": "OTHER FACTS",
+    "card-title-3": "ABOUT ME",
+    "card-description-1": "Besides being a programmer, I hold a Bachelor's degree in Political Science from the National University of Rosario.",
+    "card-description-2": "I started my career in systems accidentally at the University when, in a group project, I was the Functional Analyst.",
+    "card-description-3": " I really love cats, and I have two of them. I also enjoy practicing trekking and working in large teams."
   }
 }
