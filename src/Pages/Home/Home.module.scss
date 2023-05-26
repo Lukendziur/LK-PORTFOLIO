@@ -8,12 +8,6 @@
   text-align: center;
   padding-top: 60px;
 
-  // .about {
-  //   .icon {
-  //     margin-left: 17px;
-  //   }
-  // }
-
   .visual {
     @include mixin.flex(unset, center, center, 20px);
 
@@ -38,11 +32,6 @@
     @include mixin.flex(row, flex-start, center, 20px);
     text-align: initial;
     align-self: center;
-
-    // .about {
-    //   width: 50%;
-    //   padding-top: 25px;
-    // }
 
     .visual {
       width: 46%;

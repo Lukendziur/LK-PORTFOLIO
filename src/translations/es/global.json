@@ -24,5 +24,13 @@
   "skills": {
     "title": "Habilidades",
     "description": "lorem ipsumassssssssssssssss"
+  },
+  "project": {
+    "title": "Proyectos",
+    "description": "lorem ipsumassssssssssssssss"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "lorem ipsumassssssssssssssss"
   }
 }
