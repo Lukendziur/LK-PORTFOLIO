@@ -6,7 +6,7 @@ import { useTheme } from '@emotion/react';
 // Internal
 import PaperCards from '../../components/Molecules/PaperCards/PaperCards';
 import { BREAKPOINTS } from '../../constants/constants';
-import Avatar from './../../assets/avatar-new1.png';
+import Avatar from './../../assets/avatar-new.png';
 
 // Styles
 import styles from './Home.module.scss';
