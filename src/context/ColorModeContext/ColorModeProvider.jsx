@@ -37,6 +37,9 @@ const ColorModeProvider = ({ children }) => {
       secondaryDark: {
         main: '#000000',
       },
+      secondaryExtraDark: {
+        main: 'rgb(67, 87, 97)',
+      },
       layoutBackgroundDark: '#121212',
     }),
     [mode]

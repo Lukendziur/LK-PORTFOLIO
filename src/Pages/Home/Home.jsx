@@ -21,14 +21,14 @@ const Home = () => {
       <section className={styles.home}>
         <div className={styles.about}>
           <Typography
-            variant="h4"
+            variant="h1"
             fontSize={24}
             maxWidth={isMobile ? 'initial' : 364}
           >
             {t('home.job-title')}
           </Typography>
           <Typography
-            variant="h1"
+            variant="h2"
             fontWeight={600}
             maxWidth={isMobile ? 'initial' : 364}
             fontSize={isMobile ? '4rem' : '6rem'}
@@ -39,12 +39,13 @@ const Home = () => {
             <Chip icon={<ComputerRoundedIcon className={styles.icon} />} />
           </Divider>
           <Typography
-            variant="h6"
+            variant="h3"
+            lineHeight={2}
             fontSize={isMobile ? 14 : 18}
             textAlign="justify"
             color={
               mode === 'light'
-                ? 'var(--secondary)'
+                ? 'var(--secondaryExtraDark)'
                 : 'var(--secondaryExtraLight)'
             }
             fontWeight={400}

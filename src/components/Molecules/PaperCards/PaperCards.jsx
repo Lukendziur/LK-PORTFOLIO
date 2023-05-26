@@ -13,7 +13,7 @@ import styles from './PaperCards.module.scss';
 const PaperCards = () => {
   const theme = useTheme();
   const { t } = useTranslation('global');
-  const { secondary, mode } = theme.palette;
+  const { secondaryExtraDark, mode } = theme.palette;
 
   return (
     <section className={styles.cardsContainer}>
@@ -46,7 +46,9 @@ const PaperCards = () => {
             fontWeight={400}
             fontSize={14}
             color={
-              mode === 'dark' ? 'var(--secondaryExtraLight)' : secondary.main
+              mode === 'dark'
+                ? 'var(--secondaryExtraLight)'
+                : secondaryExtraDark.main
             }
           >
             {t('home.card-description-1')}
@@ -83,7 +85,9 @@ const PaperCards = () => {
             fontSize={14}
             paddingRight={'5px'}
             color={
-              mode === 'dark' ? 'var(--secondaryExtraLight)' : secondary.main
+              mode === 'dark'
+                ? 'var(--secondaryExtraLight)'
+                : secondaryExtraDark.main
             }
           >
             {t('home.card-description-2')}
@@ -121,7 +125,9 @@ const PaperCards = () => {
             fontWeight={400}
             fontSize={14}
             color={
-              mode === 'dark' ? 'var(--secondaryExtraLight)' : secondary.main
+              mode === 'dark'
+                ? 'var(--secondaryExtraLight)'
+                : secondaryExtraDark.main
             }
           >
             {t('home.card-description-3')}

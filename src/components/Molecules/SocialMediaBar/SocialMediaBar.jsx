@@ -29,6 +29,7 @@ const SocialMediaBar = () => {
             to="https://www.linkedin.com/in/lucilavkendziur/"
             target="_blank"
             className={styles.link}
+            aria-label="Navigate to Linkedin Lucila profile"
           >
             <LinkedInIcon />
           </Link>
@@ -44,6 +45,7 @@ const SocialMediaBar = () => {
             to={i18n.language === LANGUAGES.en ? enCV : esCV}
             target="_blank"
             className={styles.link}
+            aria-label="Download Lucila resume"
           >
             <DownloadRoundedIcon />
           </Link>
