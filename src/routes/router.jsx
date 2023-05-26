@@ -5,6 +5,9 @@ import { createBrowserRouter } from 'react-router-dom';
 import { ROUTES } from '../constants/constants';
 import Layout from '../components/Layout/Layout.jsx';
 import Home from '../Pages/Home/Home';
+import Skills from '../Pages/Skills/Skills';
+import Project from '../Pages/Projects/ProjectDetail/Project';
+import Contact from '../Pages/Contact/Contact';
 
 const router = () => {
   return createBrowserRouter([
@@ -15,12 +18,12 @@ const router = () => {
         { path: ROUTES.HOME, element: <Home /> },
         {
           path: ROUTES.SKILLS,
-          children: [{ index: true, element: <h1>SKILLS component</h1> }],
+          children: [{ index: true, element: <Skills /> }],
         },
         {
           path: ROUTES.PROJECT,
           children: [
-            { index: true, element: <h1>PROJECT component</h1> },
+            { index: true, element: <Project /> },
             {
               path: ROUTES.PROJECT_DETAIL,
               element: <h1>project dynamic component</h1>,
@@ -29,7 +32,7 @@ const router = () => {
         },
         {
           path: ROUTES.CONTACT,
-          children: [{ index: true, element: <h1>CONTACT component</h1> }],
+          children: [{ index: true, element: <Contact /> }],
         },
       ],
     },

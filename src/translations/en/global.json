@@ -19,5 +19,17 @@
     "card-description-1": "Besides being a programmer, I hold a Bachelor's degree in Political Science from the National University of Rosario.",
     "card-description-2": "I started my career in systems accidentally at the University when, in a group project, I was the Functional Analyst.",
     "card-description-3": " I really love cats, and I have two of them. I also enjoy practicing trekking and working in large teams."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "lorem ipsumassssssssssssssss"
+  },
+  "project": {
+    "title": "Projects",
+    "description": "lorem ipsumassssssssssssssss"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "lorem ipsumassssssssssssssss"
   }
 }
