@@ -7,6 +7,7 @@ import Layout from '../components/Layout/Layout.jsx';
 import Home from '../Pages/Home/Home';
 import Skills from '../Pages/Skills/Skills';
 import Project from '../Pages/Projects/ProjectDetail/Project';
+import Projects from '../Pages/Projects/Projects';
 import Contact from '../Pages/Contact/Contact';
 
 const router = () => {
@@ -23,7 +24,7 @@ const router = () => {
         {
           path: ROUTES.PROJECT,
           children: [
-            { index: true, element: <Project /> },
+            { index: true, element: <Projects /> },
             {
               path: ROUTES.PROJECT_DETAIL,
               element: <Project />,

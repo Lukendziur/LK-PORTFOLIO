@@ -1,0 +1,35 @@
+@use './../../styles/partials/mixin';
+@use './../../styles/partials/variables';
+
+.mainContainer{
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    .projectContainer{
+        @include mixin.flex(column, center, center, 30px);
+        width: 100%;
+        flex-wrap: wrap;
+    
+        .card {
+            transition: all 0.5s ease-out;
+            cursor: pointer;
+        }
+    
+        .card:hover{
+            opacity: 0.8;
+        }
+    
+    }
+    /* Tablet */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
+    padding-top: 0;
+
+    .projectContainer{
+        @include mixin.flex(row, center, center, 30px);
+    }
+
+
+
+  }
+}

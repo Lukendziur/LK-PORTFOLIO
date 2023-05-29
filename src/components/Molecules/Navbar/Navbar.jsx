@@ -12,7 +12,6 @@ import ColorModeContext from '../../../context/ColorModeContext/ColorModeContext
 import {
   BREAKPOINTS,
   LANGUAGES,
-  // LANGUAGES,
   NAVBAR_STRUCTURE,
 } from '../../../constants/constants';
 
