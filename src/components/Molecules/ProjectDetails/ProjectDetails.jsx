@@ -1,23 +1,33 @@
 // External
+import PropTypes from 'prop-types';
 import { useTheme } from '@emotion/react';
 import { useTranslation } from 'react-i18next';
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 // Internal
+import { LANGUAGES } from '../../../constants/constants';
 
 // Styles
 import styles from './ProjectDetails.module.scss';
 
-const ProjectDetails = () => {
+const ProjectDetails = ({
+  description,
+  esDescription,
+  patterns,
+  stack,
+  demoLink,
+  github,
+}) => {
   const theme = useTheme();
-  const { t } = useTranslation('global');
+  const { t, i18n } = useTranslation('global');
   const { secondaryExtraDark, mode } = theme.palette;
   //   TODO: REFACTOR CON MAPEO PARA NO REPETIR TANTO CÓDIGO IGUAL!
   return (
     <section className={styles.container}>
       <div className={styles.titles}>
         <Typography fontWeight={600} fontSize={16}>
-          DESCRIPCIÓN
+          {t('project.description-title')}
         </Typography>
         <Typography
           fontWeight={400}
@@ -28,13 +38,13 @@ const ProjectDetails = () => {
               : secondaryExtraDark.main
           }
         >
-          {t('home.card-description-1')}
+          {i18n.language === LANGUAGES.en ? description : esDescription}
         </Typography>
       </div>
 
       <div className={styles.titles}>
         <Typography fontWeight={600} fontSize={16}>
-          PATRONES DE DISEÑO
+          {t('project.pattern-design-title')}
         </Typography>
         <Typography
           fontWeight={400}
@@ -45,12 +55,12 @@ const ProjectDetails = () => {
               : secondaryExtraDark.main
           }
         >
-          {t('home.card-description-1')}
+          {patterns}
         </Typography>
       </div>
       <div className={styles.titles}>
         <Typography fontWeight={600} fontSize={16}>
-          TECNOLOGÍAS IMPLEMENTADAS
+          {t('project.stack-title')}
         </Typography>
         <Typography
           fontWeight={400}
@@ -61,16 +71,39 @@ const ProjectDetails = () => {
               : secondaryExtraDark.main
           }
         >
-          {t('home.card-description-1')}
+          {stack}
         </Typography>
       </div>
 
       <div className={styles.buttonContainer}>
-        <Button className={styles.button}>VIEW CODE</Button>
-        <Button className={styles.button}>DEMO</Button>
+        <Link
+          to={github}
+          target="_blank"
+          className={styles.button}
+          aria-label="Navigate to Github"
+        >
+          {t('project.view-code')}
+        </Link>
+        <Link
+          to={demoLink}
+          target="_blank"
+          className={styles.button}
+          aria-label="Demo"
+        >
+          {t('project.demo')}
+        </Link>
       </div>
     </section>
   );
 };
 
 export default ProjectDetails;
+
+ProjectDetails.propTypes = {
+  description: PropTypes.string,
+  esDescription: PropTypes.string,
+  patterns: PropTypes.string,
+  stack: PropTypes.string,
+  demoLink: PropTypes.string,
+  github: PropTypes.string,
+};

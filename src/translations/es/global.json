@@ -27,7 +27,13 @@
   },
   "project": {
     "title": "Proyectos",
-    "description": "lorem ipsumassssssssssssssss"
+    "description": "Esta sección muestra una selección de mis proyectos destacados. Cada proyecto representa una oportunidad única para aplicar mis habilidades y creatividad en la solución de problemas del mundo real. Desde desarrollo web hasta análisis de datos, estos proyectos demuestran mi capacidad para colaborar, pensar críticamente y entregar resultados de alta calidad. Explora los proyectos a continuación para tener una mejor comprensión de mis capacidades y del valor que puedo aportar a futuros emprendimientos.",
+    "details-button": "Ver detalle",
+    "description-title": "DESCRIPCIÓN",
+    "pattern-design-title": "PATRONES DE DISEÑO",
+    "stack-title": "TECNOLOGÍAS IMPLEMENTADAS",
+    "demo": "Demo",
+    "view-code": "Ver código"
   },
   "contact": {
     "title": "Contacto",

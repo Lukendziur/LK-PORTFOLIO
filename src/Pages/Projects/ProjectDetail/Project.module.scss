@@ -15,13 +15,13 @@
 
   }
 
+ /* MIN-TABLET */
+ @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
+  padding-top: 0;
+}
 
-
-  /* DESKTOP */
-
+  /* TABLET */
   @media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
-    padding-top: 0;
-
     .content{
       @include mixin.flex(row, unset, unset, 30px);
   

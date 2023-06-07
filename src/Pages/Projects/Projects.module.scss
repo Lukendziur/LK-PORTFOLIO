@@ -6,6 +6,12 @@
     width: 100%;
     text-align: center;
     height: 100%;
+
+    .projectsTitle{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
     .projectContainer{
         @include mixin.flex(column, center, center, 30px);
         width: 100%;
@@ -14,6 +20,16 @@
         .card {
             transition: all 0.5s ease-out;
             cursor: pointer;
+
+            .link{
+                text-decoration: none;
+                color: var(--textLight);
+                background: var(--gradient);
+                padding: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+
+            }
         }
     
         .card:hover{

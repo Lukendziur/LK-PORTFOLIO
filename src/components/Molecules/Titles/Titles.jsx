@@ -7,17 +7,18 @@ import PropTypes from 'prop-types';
 
 // Internal
 import { BREAKPOINTS } from '../../../constants/constants';
+import { concatClassNames } from '../../../utils/utils';
 
 // Styles
 import styles from './Titles.module.scss';
 
-const Titles = ({ initialTitle, principalTitle, description }) => {
+const Titles = ({ initialTitle, principalTitle, description, className }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
   const [t] = useTranslation('global');
   const isMobile = useMediaQuery(BREAKPOINTS.mobile);
   return (
-    <div className={styles.about}>
+    <div className={concatClassNames(styles.about, className)}>
       <Typography
         variant="h1"
         fontSize={24}
@@ -60,9 +61,11 @@ Titles.propTypes = {
   initialTitle: PropTypes.string,
   principalTitle: PropTypes.string,
   description: PropTypes.string,
+  className: PropTypes.string,
 };
 Titles.defaultProps = {
   initialTitle: '',
   principalTitle: '',
   description: '',
+  className: '',
 };

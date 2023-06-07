@@ -8,6 +8,7 @@ import i18next from 'i18next';
 import App from './App.jsx';
 import global_es from './translations/es/global.json';
 import global_en from './translations/en/global.json';
+import DataProvider from './context/ColorModeContext/DataProvider.jsx';
 
 // Styles
 import { CssBaseline } from '@mui/material';
@@ -30,11 +31,12 @@ i18next.init({
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Suspense fallback="loading...">
-      <I18nextProvider i18n={i18next}>
-        <CssBaseline />{' '}
-        {/* Restart initial styles and fixes compabilities between browsers*/}
-        <App />
-      </I18nextProvider>
+      <DataProvider>
+        <I18nextProvider i18n={i18next}>
+          <CssBaseline />
+          <App />
+        </I18nextProvider>
+      </DataProvider>
     </Suspense>
   </React.StrictMode>
 );
