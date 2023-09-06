@@ -22,7 +22,11 @@
   },
   "skills": {
     "title": "Skills",
-    "description": "lorem ipsumassssssssssssssss"
+    "description": "These tools are part of my daily work as a developer.",
+    "title_1": "Development tools",
+    "title_2": "Style",
+    "title_3": "Extra",
+    "title_4": "Soft Skills"
   },
   "project": {
     "title": "Projects",

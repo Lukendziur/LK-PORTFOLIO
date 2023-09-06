@@ -23,7 +23,11 @@
   },
   "skills": {
     "title": "Habilidades",
-    "description": "lorem ipsumassssssssssssssss"
+    "description": "Las presentes herramientas forman parte de mi día a día como desarrolladora.",
+    "title_1": "Herramientas de desarrollo",
+    "title_2": "Herramientas de estilado",
+    "title_3": "Bonus Track",
+    "title_4": "Habilidades comunicacionales y de equipo"
   },
   "project": {
     "title": "Proyectos",

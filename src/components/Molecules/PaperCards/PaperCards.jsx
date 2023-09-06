@@ -5,7 +5,6 @@ import PetsRoundedIcon from '@mui/icons-material/PetsRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import LightbulbRoundedIcon from '@mui/icons-material/LightbulbRounded';
 import { useTranslation } from 'react-i18next';
-// Internal
 
 // Styles
 import styles from './PaperCards.module.scss';
