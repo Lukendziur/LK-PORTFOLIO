@@ -13,7 +13,6 @@ const Footer = lazy(() => import('../Atoms/Footer/Footer'));
 function MyApp() {
   const theme = useTheme();
   const isMobile = useMediaQuery(BREAKPOINTS.mobile);
-  const isDesktop = useMediaQuery(BREAKPOINTS.desktop);
 
   // xs: un objeto donde se le puede mandar cualquier propiedad de css
   return (
@@ -21,7 +20,7 @@ function MyApp() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-start',
         width: '100%',
         alignItems: 'center',
         bgcolor:
@@ -33,7 +32,7 @@ function MyApp() {
             ? theme.palette.secondaryExtraLight.main
             : theme.palette.secondaryDark.main,
         borderRadius: 0,
-        height: isDesktop ? '100vh' : '',
+        minHeight: '100vh',
         p: 0,
       }}
     >

@@ -4,7 +4,8 @@ import { useTheme } from '@emotion/react';
 import { useTranslation } from 'react-i18next';
 import { Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 // Internal
 import { LANGUAGES } from '../../../constants/constants';
 
@@ -21,7 +22,8 @@ const ProjectDetails = ({
 }) => {
   const theme = useTheme();
   const { t, i18n } = useTranslation('global');
-  const { secondaryExtraDark, mode } = theme.palette;
+  const { secondaryExtraDark, mode, secondaryDark, secondaryExtraLight } =
+    theme.palette;
   //   TODO: REFACTOR CON MAPEO PARA NO REPETIR TANTO CÓDIGO IGUAL!
   return (
     <section className={styles.container}>
@@ -76,21 +78,26 @@ const ProjectDetails = ({
       </div>
 
       <div className={styles.buttonContainer}>
-        <Link
-          to={github}
-          target="_blank"
-          className={styles.button}
-          aria-label="Navigate to Github"
-        >
-          {t('project.view-code')}
+        <Link to={github} target="_blank" aria-label="Navigate to Github">
+          <GitHubIcon
+            sx={{
+              alignSelf: 'flex-end',
+              fontSize: '3rem',
+              color:
+                mode === 'dark' ? secondaryExtraLight.main : secondaryDark.main,
+            }}
+          />
         </Link>
-        <Link
-          to={demoLink}
-          target="_blank"
-          className={styles.button}
-          aria-label="Demo"
-        >
-          {t('project.demo')}
+
+        <Link to={demoLink} target="_blank" aria-label="Demo">
+          <OndemandVideoIcon
+            sx={{
+              alignSelf: 'flex-end',
+              fontSize: '3rem',
+              color:
+                mode === 'dark' ? secondaryExtraLight.main : secondaryDark.main,
+            }}
+          />
         </Link>
       </div>
     </section>

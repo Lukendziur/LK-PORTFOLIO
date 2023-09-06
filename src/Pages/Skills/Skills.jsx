@@ -19,7 +19,12 @@ const Skills = () => {
       />
       <section className={styles.skill1Section}>
         <div className={styles.subTitle}>
-          <Typography fontWeight={600} fontSize={20} variant="h3">
+          <Typography
+            fontWeight={600}
+            fontSize={20}
+            variant="h3"
+            color="var(--secondaryDark)"
+          >
             {t('skills.title_1')}
           </Typography>
         </div>
@@ -64,7 +69,12 @@ const Skills = () => {
 
       <section className={styles.skill1Section}>
         <div className={styles.subTitle}>
-          <Typography fontWeight={600} fontSize={20} variant="h3">
+          <Typography
+            fontWeight={600}
+            fontSize={20}
+            variant="h3"
+            color="var(--secondaryDark)"
+          >
             {t('skills.title_2')}
           </Typography>
         </div>
@@ -91,7 +101,12 @@ const Skills = () => {
 
       <section className={styles.skill1Section}>
         <div className={styles.subTitle}>
-          <Typography fontWeight={600} fontSize={20} variant="h3">
+          <Typography
+            fontWeight={600}
+            fontSize={20}
+            variant="h3"
+            color="var(--secondaryDark)"
+          >
             {t('skills.title_3')}
           </Typography>
         </div>
@@ -119,7 +134,12 @@ const Skills = () => {
 
       <section className={styles.skill1Section}>
         <div className={styles.subTitle}>
-          <Typography fontWeight={600} fontSize={20} variant="h3">
+          <Typography
+            fontWeight={600}
+            fontSize={20}
+            variant="h3"
+            color="var(--secondaryDark)"
+          >
             {t('skills.title_4')}
           </Typography>
         </div>
