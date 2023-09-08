@@ -41,6 +41,8 @@ const ColorModeProvider = ({ children }) => {
         main: 'rgb(67, 87, 97)',
       },
       layoutBackgroundDark: '#121212',
+      cardsBgDark: { main: 'hsl(0deg 0% 26.14% / 80%)' },
+      cardsBgLight: { main: 'hsla(0,0%,96%,.8)' },
     }),
     [mode]
   );
@@ -49,6 +51,9 @@ const ColorModeProvider = ({ children }) => {
     () =>
       createTheme({
         palette,
+        typography: {
+          fontFamily: ['Poppins'],
+        },
         components: {
           MuiUseMediaQuery: {
             defaultProps: {

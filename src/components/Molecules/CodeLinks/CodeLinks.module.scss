@@ -1,0 +1,7 @@
+@use './../../../styles/partials/variables';
+@use './../../../styles/partials/mixin';
+
+.linksContainer{
+    @include mixin.flex(row, unset, unset, 10px);
+
+}  

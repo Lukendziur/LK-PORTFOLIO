@@ -1,0 +1,34 @@
+@use './../../styles/partials/mixin';
+@use './../../styles/partials/variables';
+
+/* MOBILE FIRST */
+.main {
+  padding-top: 60px;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  @include mixin.flex(column, unset, unset, 30px);
+  .aboutTitle{
+    width: 100%
+  }
+
+  .skillCardsContainer {
+    @include mixin.flex(row, unset, center, 10px);
+    flex-wrap: wrap;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .skillCards {
+      border-radius: 10px;
+      padding: 10px;
+      width: 170px;
+    }
+  }
+
+  /* MIN-TABLET */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
+    padding-top: 0;
+  }
+}

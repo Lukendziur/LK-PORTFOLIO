@@ -6,7 +6,7 @@
   "home": {
     "navbar-structure": {
       "home": "Inicio",
-      "skills": "Habilidades",
+      "about": "Sobre mi",
       "projects": "Proyectos",
       "contact": "Contacto"
     },
@@ -21,13 +21,10 @@
     "card-description-2": "Comencé mi carrera en sistemas accidentalmente en la Universidad, cuando en un proyecto grupal hice la parte funcional de una app.",
     "card-description-3": "Me gustan mucho los gatos y tengo dos. Además me encanta practicar trekking y trabajar en equipo."
   },
-  "skills": {
-    "title": "Habilidades",
-    "description": "Las presentes herramientas forman parte de mi día a día como desarrolladora.",
-    "title_1": "Herramientas de desarrollo",
-    "title_2": "Herramientas de estilado",
-    "title_3": "Bonus Track",
-    "title_4": "Habilidades comunicacionales y de equipo"
+  "about": {
+    "title": "Sobre mi",
+    "description": "Comencé en el mundo del desarrollo de software en 2021 como NetSuite Developer, lo cual me permitió tener una base muy fuerte en JavaScript vanilla y comprender muy a fondo la relación entre cliente y servidor. A mediados del 2022 comencé a trabajar como Frontend Developer, creando interfaces de usuario accesibles y centradas en el usuario. Como desarrolladora, me gusta asegurarme por la calidad del código entregado, la documentación y el bienestar del equipo.",
+    "skills": "Skills"
   },
   "project": {
     "title": "Proyectos",

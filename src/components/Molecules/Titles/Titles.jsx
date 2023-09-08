@@ -27,9 +27,9 @@ const Titles = ({ initialTitle, principalTitle, description, className }) => {
         {t(initialTitle)}
       </Typography>
       <Typography
-        variant="h2"
+        variant={initialTitle ? 'h2' : 'h1'}
         fontWeight={600}
-        maxWidth={isMobile ? 'initial' : 364}
+        maxWidth={isMobile ? 'initial' : 435}
         fontSize={isMobile ? '4rem' : '6rem'}
       >
         {t(principalTitle)}

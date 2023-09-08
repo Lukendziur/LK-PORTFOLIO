@@ -6,7 +6,7 @@ import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
 export const ROUTES = Object.freeze({
   HOME: '/',
-  SKILLS: '/skills',
+  ABOUT: '/about',
   PROJECT: '/projects',
   PROJECT_DETAIL: ':id',
   CONTACT: '/contact',
@@ -20,9 +20,9 @@ export const NAVBAR_STRUCTURE = [
     icon: HomeRoundedIcon,
   },
   {
-    path: '/skills',
-    routeName: 'Skills',
-    i18: 'home.navbar-structure.skills',
+    path: '/about',
+    routeName: 'About',
+    i18: 'home.navbar-structure.about',
     icon: PsychologyRoundedIcon,
   },
   {

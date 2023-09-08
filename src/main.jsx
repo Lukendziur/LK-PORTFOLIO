@@ -12,8 +12,8 @@ import DataProvider from './context/ColorModeContext/DataProvider.jsx';
 
 // Styles
 import { CssBaseline } from '@mui/material';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
+import '@fontsource/Poppins/400.css';
+import '@fontsource/Poppins/500.css';
 
 i18next.init({
   interpolation: { escapeValue: false },

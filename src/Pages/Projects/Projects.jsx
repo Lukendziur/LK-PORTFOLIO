@@ -1,28 +1,12 @@
-/* eslint-disable no-unused-vars */
 // External
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import InfoIcon from '@mui/icons-material/Info';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { useTheme } from '@emotion/react';
 
 // Internal
-import {
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  IconButton,
-  ImageListItemBar,
-  Typography,
-  useMediaQuery,
-} from '@mui/material';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import Titles from '../../components/Molecules/Titles/Titles';
-import { BREAKPOINTS, ROUTES } from '../../constants/constants';
+import { ROUTES } from '../../constants/constants';
 import useData from '../../hooks/useData';
 
 // Styles
@@ -30,9 +14,6 @@ import styles from './Projects.module.scss';
 
 const Projects = () => {
   const data = useData().data;
-  const { t } = useTranslation('global');
-  const isMobile = useMediaQuery(BREAKPOINTS.mobile);
-  const isDesktop = useMediaQuery(BREAKPOINTS.desktop);
   const theme = useTheme();
   const { secondaryExtraDark, mode } = theme.palette;
 
@@ -40,7 +21,6 @@ const Projects = () => {
     <main className={styles.mainContainer}>
       <Titles
         principalTitle={'project.title'}
-        // description={'project.description'}
         className={styles.projectsTitle}
       />
 

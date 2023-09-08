@@ -6,7 +6,7 @@
   "home": {
     "navbar-structure": {
       "home": "Home",
-      "skills": "Skills",
+      "about": "About",
       "projects": "Projects",
       "contact": "Contact"
     },
@@ -20,13 +20,10 @@
     "card-description-2": "I started my career in systems accidentally at the University when, in a group project, I was the Functional Analyst.",
     "card-description-3": " I really love cats, and I have two of them. I also enjoy practicing trekking and working in large teams."
   },
-  "skills": {
-    "title": "Skills",
-    "description": "These tools are part of my daily work as a developer.",
-    "title_1": "Development tools",
-    "title_2": "Style",
-    "title_3": "Extra",
-    "title_4": "Soft Skills"
+  "about": {
+    "title": "About",
+    "description": "I started in the world of software development in 2021 as a NetSuite Developer, which allowed me to build a very strong foundation in vanilla JavaScript and gain a deep understanding of the client-server relationship. In mid-2022, I transitioned to working as a Frontend Developer, creating user-friendly and accessible user interfaces. As a developer, I take pride in ensuring the quality of the delivered code, documentation, and the well-being of the team.",
+    "skills": "Skills"
   },
   "project": {
     "title": "Projects",

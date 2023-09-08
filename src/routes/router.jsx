@@ -5,7 +5,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { ROUTES } from '../constants/constants';
 import Layout from '../components/Layout/Layout.jsx';
 import Home from '../Pages/Home/Home';
-import Skills from '../Pages/Skills/Skills';
+import About from '../Pages/About/About';
 import Project from '../Pages/Projects/ProjectDetail/Project';
 import Projects from '../Pages/Projects/Projects';
 import Contact from '../Pages/Contact/Contact';
@@ -18,8 +18,8 @@ const router = () => {
       children: [
         { path: ROUTES.HOME, element: <Home /> },
         {
-          path: ROUTES.SKILLS,
-          children: [{ index: true, element: <Skills /> }],
+          path: ROUTES.ABOUT,
+          children: [{ index: true, element: <About /> }],
         },
         {
           path: ROUTES.PROJECT,
