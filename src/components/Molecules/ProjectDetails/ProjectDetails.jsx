@@ -2,14 +2,14 @@
 import PropTypes from 'prop-types';
 import { useTheme } from '@emotion/react';
 import { useTranslation } from 'react-i18next';
-import { Typography } from '@mui/material';
+import { Skeleton, Typography } from '@mui/material';
 
 // Internal
 import { LANGUAGES } from '../../../constants/constants';
+import CodeLinks from '../CodeLinks/CodeLinks';
 
 // Styles
 import styles from './ProjectDetails.module.scss';
-import CodeLinks from '../CodeLinks/CodeLinks';
 
 const ProjectDetails = ({
   description,
@@ -43,7 +43,20 @@ const ProjectDetails = ({
               : secondaryExtraDark.main
           }
         >
-          {i18n.language === LANGUAGES.en ? description : esDescription}
+          {esDescription || description ? (
+            i18n.language === LANGUAGES.en ? (
+              description
+            ) : (
+              esDescription
+            )
+          ) : (
+            <>
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+            </>
+          )}
         </Typography>
       </div>
 
@@ -65,7 +78,7 @@ const ProjectDetails = ({
               : secondaryExtraDark.main
           }
         >
-          {patterns}
+          {patterns ? patterns : <Skeleton />}
         </Typography>
       </div>
       <div className={styles.titles}>
@@ -86,7 +99,7 @@ const ProjectDetails = ({
               : secondaryExtraDark.main
           }
         >
-          {stack}
+          {stack ? stack : <Skeleton />}
         </Typography>
       </div>
 

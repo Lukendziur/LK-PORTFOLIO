@@ -1,5 +1,11 @@
 // External
-import { Chip, Divider, Typography, useMediaQuery } from '@mui/material';
+import {
+  Chip,
+  Divider,
+  Skeleton,
+  Typography,
+  useMediaQuery,
+} from '@mui/material';
 import ComputerRoundedIcon from '@mui/icons-material/ComputerRounded';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@emotion/react';
@@ -32,7 +38,11 @@ const Titles = ({ initialTitle, principalTitle, description, className }) => {
         maxWidth={isMobile ? 'initial' : 435}
         fontSize={isMobile ? '4rem' : '6rem'}
       >
-        {t(principalTitle)}
+        {principalTitle ? (
+          t(principalTitle)
+        ) : (
+          <Skeleton width={435} height={122} />
+        )}
       </Typography>
       <Divider flexItem>
         <Chip icon={<ComputerRoundedIcon className={styles.icon} />} />

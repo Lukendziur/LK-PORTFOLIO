@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 // Internal
 import { BREAKPOINTS } from '../../../constants/constants';
-import { Paper, useMediaQuery } from '@mui/material';
+import { Paper, Skeleton, useMediaQuery } from '@mui/material';
 import { useTheme } from '@emotion/react';
 
 // Styles
@@ -29,7 +29,7 @@ const ResponsiveProjectDemo = ({ images }) => {
 
   return isMobile ? (
     <img src={tabletImg} className={styles.mobileImage} alt="" />
-  ) : (
+  ) : tabletImg && desktopImg && mobileImg ? (
     <Paper
       className={styles.tablet}
       elevation={8}
@@ -55,6 +55,8 @@ const ResponsiveProjectDemo = ({ images }) => {
         }}
       />
     </Paper>
+  ) : (
+    <Skeleton className={styles.tablet} />
   );
 };
 
