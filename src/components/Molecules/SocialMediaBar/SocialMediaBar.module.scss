@@ -7,7 +7,7 @@
     justify-content: center;
     background: var(--gradient);
     width: 43px;
-    height: 169px;
+    height: 175px;
     border-radius: 0px 73px 73px 0px;
     position: absolute;
     left: 0;
@@ -30,7 +30,7 @@
         @include mixin.flex(column, space-around, center, 30px);
         background: var(--gradient);
         width: 48px;
-        height: 222px;
+        height: 280px;
         border-radius: 0px 73px 73px 0px;
         position: absolute;
         left: 0;

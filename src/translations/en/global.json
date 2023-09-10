@@ -1,7 +1,8 @@
 {
   "globals": {
     "tooltip-linkedin": "LinkedIn",
-    "tooltip-download-cv": "Download resume"
+    "tooltip-download-cv": "Download resume",
+    "tooltip-email": "Send me an email"
   },
   "home": {
     "navbar-structure": {
@@ -37,6 +38,13 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "lorem ipsumassssssssssssssss"
+    "description": "We can be in touch through Linkedin, email or you can send me a message through this form and I will receive it directly in my Gmail inbox :).",
+    "form-name": "Name",
+    "form-subject": "Subject",
+    "form-message": "message",
+    "form-required": "{{fieldName}} is required",
+    "form-button": "SEND MESSAGE",
+    "form-gmail-button": "FROM GMAIL",
+    "form-email-format": "Entered value does not match email format"
   }
 }

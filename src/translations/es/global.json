@@ -1,7 +1,8 @@
 {
   "globals": {
     "tooltip-linkedin": "LinkedIn",
-    "tooltip-download-cv": "Descargar CV"
+    "tooltip-download-cv": "Descargar CV",
+    "tooltip-email": "Envíame un email"
   },
   "home": {
     "navbar-structure": {
@@ -38,6 +39,13 @@
   },
   "contact": {
     "title": "Contacto",
-    "description": "lorem ipsumassssssssssssssss"
+    "description": "Podemos estar en contacto a través de Linkedin, email o puedes enviarme un mensaje a través de este form y lo recibiré directamente en mi bandeja de entrada de Gmail :).",
+    "form-name": "Nombre",
+    "form-subject": "Asunto",
+    "form-message": "Mensaje",
+    "form-required": "{{fieldName}} es requerido",
+    "form-button": "ENVIAR MENSAJE",
+    "form-gmail-button": "DESDE GMAIL",
+    "form-email-format": "El valor ingresado no corresponde al formato email"
   }
 }

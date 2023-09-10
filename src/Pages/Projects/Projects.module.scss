@@ -4,7 +4,7 @@
 .mainContainer{
     padding-top: 60px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     height: 100%;
 
     .projectsTitle{
@@ -19,7 +19,7 @@
     
         .card {
             transition: all 0.5s ease-out;
-
+            text-align: left;
             cursor: pointer;
             padding: 15px;
             border-radius:10px;

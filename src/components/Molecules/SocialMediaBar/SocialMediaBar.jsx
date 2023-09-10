@@ -1,6 +1,7 @@
 // External
 import { IconButton, Tooltip } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -48,6 +49,22 @@ const SocialMediaBar = () => {
             aria-label="Download Lucila resume"
           >
             <DownloadRoundedIcon />
+          </Link>
+        </IconButton>
+      </Tooltip>
+      <Tooltip title={t('globals.tooltip-email')} placement="right">
+        <IconButton
+          aria-label="Send me an email"
+          size="large"
+          className={styles.button}
+        >
+          <Link
+            to={i18n.language === LANGUAGES.en ? enCV : esCV}
+            target="_blank"
+            className={styles.link}
+            aria-label="Send me an email"
+          >
+            <EmailIcon />
           </Link>
         </IconButton>
       </Tooltip>

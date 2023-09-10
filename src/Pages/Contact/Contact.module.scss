@@ -1,0 +1,25 @@
+@use './../../styles/partials/variables';
+@use './../../styles/partials/mixin';
+
+.contactTitle{
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+
+     /* Tablet */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
+    padding-top: 0;
+
+   
+
+
+
+  }
+}
+.contactMain{
+  width: 100%;
+  @include mixin.flex(column, center, center, 10px);
+
+  
+}
+
