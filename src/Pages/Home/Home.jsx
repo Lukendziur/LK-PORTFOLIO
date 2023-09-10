@@ -21,6 +21,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* <div className={styles.divsParent}>
+      <div className={styles.div1}></div>
+      <div className={styles.div2}></div>
+      <div className={styles.div3}></div>
+    </div> */}
       <PaperCards />
     </>
   );
