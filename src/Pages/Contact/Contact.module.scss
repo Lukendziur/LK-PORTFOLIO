@@ -9,17 +9,43 @@
      /* Tablet */
   @media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
     padding-top: 0;
-
-   
-
-
+  }
+  /* Desktop */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
+    width: 68%;
+    text-align: center;
 
   }
 }
 .contactMain{
   width: 100%;
-  @include mixin.flex(column, center, center, 10px);
+  @include mixin.flex(row, flex-start, center);
 
+  img {
+    position: relative;
+    bottom: 200px;
+  }
+  /* Tablet */
+  @media only screen and (max-width: map_get(variables.$breakpoints, 'tablet')) {
+    img {
+      position: relative;
+      bottom: 40px;
+      width: 300px;
+    }
+
+  }
+
+    /* Desktop */
+    @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
+      width: 100%;
+      @include mixin.flex(row, flex-start, center);
+    
+      img {
+        position: relative;
+        bottom: 200px;
+      }
+  
+    }
   
 }
 

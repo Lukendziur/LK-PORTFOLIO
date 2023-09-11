@@ -11,7 +11,7 @@
     @include mixin.flex(unset, center, center, 20px);
 
     .userBg {
-      background: var(--gradient);
+      // background: var(--gradient);
       width: 100%;
       height: 360px;
       border-radius: 80px;
