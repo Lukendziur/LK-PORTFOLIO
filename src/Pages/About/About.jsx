@@ -6,7 +6,7 @@ import { useTheme } from '@emotion/react';
 import { Typography } from '@mui/material';
 import Titles from '../../components/Molecules/Titles/Titles';
 import { skillsArray } from './utils';
-import Css from './../../../public/assets/css-icon.svg';
+
 // Styles
 import styles from './About.module.scss';
 
@@ -32,12 +32,11 @@ const About = () => {
                 mode === 'dark' ? cardsBgDark.main : cardsBgLight.main,
             }}
           >
-            <img src={Css} alt={skill.alt} />
+            <img src={skill.iconPath} alt={skill.alt} />
 
             <Typography>{t(skill.title)}</Typography>
           </article>
         ))}
-        <img src={`../../../public/assets/css-icon.svg`} />
       </section>
     </main>
   );

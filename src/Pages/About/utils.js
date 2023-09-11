@@ -1,3 +1,5 @@
+import Css from './../../../public/assets/css-icon.svg';
+
 export const skillsArray = [
   {
     iconPath: 'next-svg.svg',
@@ -81,7 +83,7 @@ export const skillsArray = [
     title: 'Storybook',
   },
   {
-    iconPath: 'css-icon.svg',
+    iconPath: Css,
     alt: 'CSS logo',
     title: 'CSS',
   },
