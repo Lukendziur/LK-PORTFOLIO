@@ -1,15 +1,53 @@
-
 {
-    "home": {
-        "navbar-structure": {
-            "home": "Home",
-            "skills": "Skills",
-            "projects": "Proyectos",
-            "contact": "Contacto"
-        },
-        "job-title": "Desarrolladora Front-End",
-        "name": "Lucila V. Kendziur",
-        "resume": "texto de prueba, modificar"
-
-    }
+  "globals": {
+    "tooltip-linkedin": "LinkedIn",
+    "tooltip-download-cv": "Download resume",
+    "tooltip-email": "Send me an email"
+  },
+  "home": {
+    "navbar-structure": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "job-title": "Front-End Developer",
+    "name": "Lucila V. Kendziur",
+    "resume": "Hi! I'm Lu, a front-end developer from Argentina. I greatly enjoy developing user interfaces that are accessible to all users. I love being able to learn and share my knowledge with the team. Teamwork, code documentation, and accessibility are three things that are very important to me. ",
+    "card-title-1": "FUN FACT",
+    "card-title-2": "OTHER FACTS",
+    "card-title-3": "ABOUT ME",
+    "card-description-1": "Besides being a programmer, I hold a Bachelor's degree in Political Science from the National University of Rosario.",
+    "card-description-2": "I started my career in systems accidentally at the University when, in a group project, I was the Functional Analyst.",
+    "card-description-3": " I really love cats, and I have two of them. I also enjoy practicing trekking and working in large teams."
+  },
+  "about": {
+    "initialTitle": "Story and Skills",
+    "title": "About",
+    "description": "I started in the world of software development in 2021 as a NetSuite Developer, which allowed me to build a very strong foundation in vanilla JavaScript and gain a deep understanding of the client-server relationship. In mid-2022, I transitioned to working as a Frontend Developer, creating user-friendly and accessible user interfaces. As a developer, I take pride in ensuring the quality of the delivered code, documentation, and the well-being of the team.",
+    "skills": "Skills"
+  },
+  "project": {
+    "initialTitle": "Skills Application",
+    "title": "Projects",
+    "description": "This section displays my most recent projects. They consist of three key components that I believe are important to mention: Project description, utilized design patterns, employed technologies, and links to live demos and GitHub repositories. However, these projects represent only a fraction of what I can accomplish, as they are personal endeavors I undertake every few months when I have the time or when I need to learn how to use a new tool for my work.",
+    "details-button": "See details",
+    "description-title": "DESCRIPTION",
+    "pattern-design-title": "PATTERN DESIGN",
+    "stack-title": "STACK",
+    "demo": "Demo",
+    "view-code": "Code"
+  },
+  "contact": {
+    "initialTitle": "Let's keep in touch!",
+    "title": "Contact",
+    "description": "We can be in touch through Linkedin, email or you can send me a message through this form and I will receive it directly in my Gmail inbox :).",
+    "form-name": "Name",
+    "form-subject": "Subject",
+    "form-message": "message",
+    "form-required": "{{fieldName}} is required",
+    "form-button": "SEND MESSAGE",
+    "form-gmail-button": "FROM GMAIL",
+    "form-email-format": "Entered value does not match email format"
+  }
 }

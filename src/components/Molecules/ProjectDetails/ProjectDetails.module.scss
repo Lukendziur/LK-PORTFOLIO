@@ -1,0 +1,30 @@
+@use './../../../styles/partials/variables';
+@use './../../../styles/partials/mixin';
+
+
+/* MOBILE FIRST */
+.container{
+    @include mixin.flex(column, unset, unset, 40px);
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    .titles{
+        margin-bottom: 10px;
+    }
+  
+    /* TABLET */
+    @media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
+    width: 35%;
+   
+     }
+
+       /* DESKTOP */
+    @media only screen and (min-width: map_get(variables.$breakpoints, 'large-desktop')) {
+        width: 50%;
+       
+        }
+
+ 
+}

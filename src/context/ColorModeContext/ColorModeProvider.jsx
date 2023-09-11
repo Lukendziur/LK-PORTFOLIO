@@ -1,59 +1,68 @@
-import PropTypes from "prop-types";
-import ColorModeContext from "./ColorModeContext";
-import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/material/styles";
-import { useMemo, useState } from "react";
-import { teal, blueGrey, grey } from '@mui/material/colors';
+// External
+import { useMemo, useState } from 'react';
+import { ThemeProvider } from '@emotion/react';
+import PropTypes from 'prop-types';
+import createTheme from '@mui/material/styles/createTheme';
+import { blueGrey } from '@mui/material/colors';
+
+// Internal
+import ColorModeContext from './ColorModeContext';
 
 const ColorModeProvider = ({ children }) => {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState('light');
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
       },
     }),
     []
   );
 
-  const palette = {
-    mode, 
-    primary: {
-      main: teal[500],
-    },
-    primaryLight: {
-      main:teal[200]
-    },
-    primaryDark: {
-      main: teal[700],
-    },
-    secondary: {
-      main: blueGrey[500],
-    },
-    secondaryExtraLight: {
-      main: blueGrey[50]
-    },
-    secondaryLight: {
-      main: blueGrey[200]
-    },
-    secondaryDark: {
-      main: blueGrey[800],
-    },
-    secondaryExtraDark: {
-      main: blueGrey[900],
-    },
-    layoutBackgroundDark: '#121212'
-    ,
-    layoutBackgroundLight: grey[50]
-    
-  }
+  const palette = useMemo(
+    () => ({
+      mode,
+      primary: {
+        main: '#007cc5',
+      },
+      primaryDark: {
+        main: '#007cc5',
+      },
+      secondary: {
+        main: blueGrey[500],
+      },
+      secondaryExtraLight: {
+        main: blueGrey[50],
+      },
+      secondaryDark: {
+        main: '#000000',
+      },
+      secondaryExtraDark: {
+        main: 'rgb(67, 87, 97)',
+      },
+      layoutBackgroundDark: '#121212',
+      cardsBgDark: { main: 'hsl(0deg 0% 26.14% / 80%)' },
+      cardsBgLight: { main: 'hsla(0,0%,96%,.8)' },
+    }),
+    [mode]
+  );
 
   const theme = useMemo(
     () =>
       createTheme({
-        palette
+        palette,
+        typography: {
+          fontFamily: ['Poppins'],
+        },
+        components: {
+          MuiUseMediaQuery: {
+            defaultProps: {
+              noSsr: true,
+            },
+          },
+        },
       }),
-    [mode]
+    [palette]
   );
 
   return (

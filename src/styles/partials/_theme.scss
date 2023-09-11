@@ -1,42 +1,19 @@
-// :root {
-//     --accent: #6439ff;
-//     --accent-light: #f4f4ff;
-//     --bg-main: #f4f4f4;
-//     --light: white;
-//     --dark: black;
-//     --primary: #30315e;
-//     --primary-light: #5b5c8c;
-//     --primary-accent-bar: #9696ff;
-//     --primary-dark: #06083f;
-//     --secondary: #999;
-//     --secondary-lighter: #e8e8e8;
-//     --secondary-light: #dde1e6;
-//     --secondary-dark: #666;
-//     --error: #f03641;
-//     --error-light: #ed504c;
-//     --success: #00a640;
-//     --success-light: #00c07b;
-//     --success-dark: #008842;
-//     --danger: #fe5d26;
-//     --warning-dark: #efaa25;
-//     --warning: #ffd710;
-//     --accent-dark: #3e14d7;
-//     --shadow: 0 0 10px #3f3f3f26;
-//     --bg-main-lighter: #e5e5ff;
-//     --bg-backdrop: #00000060;
-//     --bg-main-accent: #f7f7f7;
-//     --bg-elements-accent: #eceefb;
-//     --transparent: transparent;
-//     --danger-dark: #d52b1e;
-//     --bg-elements-success: #ebf8f1;
-//     --bg-elements-success-accent: #86d5ab;
-//     --bg-elements-danger: #fdefee;
-//     --bg-elements-danger-accent: #f5ada8;
-//   }
+:root {
+    --primary: #007cc5;
+    --primaryLight: #007cc5;
+    --primaryDark: #224596;
+    --secondary: #607d8b;
+    --secondaryExtraLight: #eceff1;
+    --secondaryLight: #b0bec5;
+    --secondaryDark: #000000;
+    --secondaryExtraDark: rgb(67, 87, 97);
+    --layoutBackgroundLight: #fafafa;
+    --textLight: #eceff1;
+    --gradient: linear-gradient(86deg, #224596 0%, #007cc5 100%);
+    --cardsBgDark: hsl(0deg 0% 26.14% / 80%);
+    --cardsBgLight: hsla(0,0%,96%,.8); 
   
-  /* in case there is a dark theme */
+  }
   
-  /* [data-theme="dark"] {
-  
-  } */
+
   

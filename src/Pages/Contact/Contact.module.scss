@@ -1,0 +1,58 @@
+@use './../../styles/partials/variables';
+@use './../../styles/partials/mixin';
+.bigMain{
+  margin-top: 75px;
+  width: 100%;
+
+  .contactTitle{
+      width: 100%;
+      text-align: center;
+  
+
+    /* Desktop */
+    @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
+      width: 68%;
+      text-align: center;
+  
+    }
+  }
+  .contactMain{
+    width: 100%;
+    @include mixin.flex(row, flex-start, center);
+  
+    img {
+      position: relative;
+      bottom: 172px;
+    }
+    /* Tablet */
+    @media only screen and (max-width: map_get(variables.$breakpoints, 'tablet')) {
+      img {
+        position: relative;
+        bottom: 40px;
+        width: 300px;
+      }
+  
+    }
+  
+      /* Desktop */
+      @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
+        width: 100%;
+        @include mixin.flex(row, flex-start, center);
+      
+        img {
+          position: relative;
+          bottom: 172px;
+        }
+    
+      }
+    
+  }
+
+   /* Tablet */
+   @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
+margin-top: 0;
+padding-top: 0;
+
+  }
+
+}  

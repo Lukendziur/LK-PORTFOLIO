@@ -1,0 +1,35 @@
+@use "./../../../styles/partials/mixin";
+@use "./../../../styles/partials/variables";
+.manuButton{
+    color: var(--secondaryExtraLight) !important;
+}
+.mobileNavbar{
+
+    .navbarCustomItem{
+        @include mixin.flex(column, initial, initial, 20px);
+        align-items: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: initial;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    background: var(--gradient);
+    width: 209px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2px 0px 0px 22px;
+    li {
+
+        .link {
+            text-decoration: none;
+            color: var(--secondaryExtraLight);
+            font-size: 20px;
+            font-weight: 500;
+            width: 100%;
+            display: block;
+        }
+    }
+    }
+}

@@ -1,0 +1,65 @@
+@use './../../../styles/partials/variables';
+@use './../../../styles/partials/mixin';
+
+.cardsContainer {
+  display: none;
+
+  /* TABLET */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
+    display: none;
+  }
+
+  /* DESKTOP */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
+    @include mixin.flex(row, unset, space-around, 15px);
+    width: 100%;
+
+    .paper {
+      width: 455px;
+      height: 120px;
+      z-index: 1;
+      @include mixin.flex(unset, flex-start, unset, 15px);
+
+      .titles {
+        padding-top: 18px;
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      svg {
+        font-size: 50px;
+        align-self: center;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  /* DESKTOP */
+  @media only screen and (min-width: map_get(variables.$breakpoints, 'large-desktop')) {
+    @include mixin.flex(row, unset, space-around, 15px);
+    width: 100%;
+
+    .paper {
+      width: 455px;
+      height: 120px;
+      z-index: 1;
+      @include mixin.flex(unset, flex-start, unset, 15px);
+
+      .titles {
+        padding-top: 18px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      svg {
+        font-size: 50px;
+        align-self: center;
+        margin-left: 15px;
+      }
+    }
+  }
+}
