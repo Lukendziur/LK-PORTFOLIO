@@ -26,7 +26,9 @@ const Projects = () => {
   return (
     <main className={styles.mainContainer}>
       <Titles
+        initialTitle={'project.initialTitle'}
         principalTitle={'project.title'}
+        description={'project.description'}
         className={styles.projectsTitle}
       />
 

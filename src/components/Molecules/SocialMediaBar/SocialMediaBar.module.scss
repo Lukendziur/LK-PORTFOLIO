@@ -6,19 +6,19 @@
     gap: 11px;
     justify-content: center;
     background: var(--gradient);
-    width: 43px;
+    width: 32px;
     height: 175px;
     border-radius: 0px 73px 73px 0px;
     position: absolute;
     left: 0;
-    top: 92px;
+    top: 60px;
     color: white;
     .button {
         padding: 0;
         .link{
             width: 40px;
             svg{
-                font-size: 30px;
+                font-size: 26px;
                 color: var(--secondaryExtraLight);
             }
         }

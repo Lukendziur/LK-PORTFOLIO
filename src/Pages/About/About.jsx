@@ -17,6 +17,7 @@ const About = () => {
   return (
     <main className={styles.main}>
       <Titles
+        initialTitle={'about.initialTitle'}
         principalTitle={'about.title'}
         description={'about.description'}
         className={styles.aboutTitle}

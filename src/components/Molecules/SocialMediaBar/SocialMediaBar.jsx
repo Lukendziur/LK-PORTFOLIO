@@ -59,7 +59,9 @@ const SocialMediaBar = () => {
           className={styles.button}
         >
           <Link
-            to={i18n.language === LANGUAGES.en ? enCV : esCV}
+            to={
+              'https://mail.google.com/mail/u/0/?fs=1&to=lukendziur@gmail.com&tf=cm'
+            }
             target="_blank"
             className={styles.link}
             aria-label="Send me an email"

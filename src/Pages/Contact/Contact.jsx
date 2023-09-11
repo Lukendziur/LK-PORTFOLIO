@@ -13,17 +13,18 @@ import styles from './Contact.module.scss';
 const Contact = () => {
   const isMobile = useMediaQuery(BREAKPOINTS.mobile);
   return (
-    <>
+    <main className={styles.bigMain}>
       <Titles
+        initialTitle={'contact.initialTitle'}
         principalTitle={'contact.title'}
         description={'contact.description'}
         className={styles.contactTitle}
       />
-      <main className={styles.contactMain}>
+      <section className={styles.contactMain}>
         <ContactForm />
         {!isMobile && <img src={Avatar} alt="Avatar" />}
-      </main>
-    </>
+      </section>
+    </main>
   );
 };
 

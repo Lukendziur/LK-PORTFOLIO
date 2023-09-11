@@ -6,6 +6,7 @@
   @include mixin.flex(column, unset, flex-start, 20px);
   align-self: flex-start;
   text-align: center;
+  margin-top: 75px;
 
   .visual {
     @include mixin.flex(unset, center, center, 20px);
@@ -125,6 +126,7 @@
 
   @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
     padding-top: initial;
+    margin-top: 0;
   }
 
   /* Tablet */

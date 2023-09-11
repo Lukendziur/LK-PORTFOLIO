@@ -14,6 +14,7 @@ import {
   LANGUAGES,
   NAVBAR_STRUCTURE,
 } from '../../../constants/constants';
+import MobileNavbar from '../MobileNavbar/MobileNavbar';
 
 // Styles
 import styles from './Navbar.module.scss';
@@ -31,20 +32,22 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <ul>
-        {NAVBAR_STRUCTURE.map((navItem) => (
-          <li key={navItem.routeName}>
-            <NavLink
-              aria-label={navItem.routeName}
-              to={navItem.path}
-              style={({ isActive }) => setActiveLinkColor(isActive)}
-              className={styles.link}
-            >
-              {isMobile ? <navItem.icon fontSize="large" /> : t(navItem.i18)}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+      {!isMobile && (
+        <ul>
+          {NAVBAR_STRUCTURE.map((navItem) => (
+            <li key={navItem.routeName}>
+              <NavLink
+                aria-label={navItem.routeName}
+                to={navItem.path}
+                style={({ isActive }) => setActiveLinkColor(isActive)}
+                className={styles.link}
+              >
+                {t(navItem.i18)}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      )}
       <div className={styles.actionsBar}>
         <Button
           size="large"
@@ -74,6 +77,8 @@ const Navbar = () => {
         >
           {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
         </IconButton>
+
+        {isMobile && <MobileNavbar />}
       </div>
     </nav>
   );

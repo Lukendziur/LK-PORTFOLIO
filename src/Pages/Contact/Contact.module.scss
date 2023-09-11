@@ -1,51 +1,58 @@
 @use './../../styles/partials/variables';
 @use './../../styles/partials/mixin';
-
-.contactTitle{
-    width: 100%;
-    text-align: center;
-    padding-top: 60px;
-
-     /* Tablet */
-  @media only screen and (min-width: map_get(variables.$breakpoints, 'tablet')) {
-    padding-top: 0;
-  }
-  /* Desktop */
-  @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
-    width: 68%;
-    text-align: center;
-
-  }
-}
-.contactMain{
+.bigMain{
+  margin-top: 75px;
   width: 100%;
-  @include mixin.flex(row, flex-start, center);
 
-  img {
-    position: relative;
-    bottom: 200px;
-  }
-  /* Tablet */
-  @media only screen and (max-width: map_get(variables.$breakpoints, 'tablet')) {
-    img {
-      position: relative;
-      bottom: 40px;
-      width: 300px;
-    }
-
-  }
+  .contactTitle{
+      width: 100%;
+      text-align: center;
+  
 
     /* Desktop */
     @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
-      width: 100%;
-      @include mixin.flex(row, flex-start, center);
-    
+      width: 68%;
+      text-align: center;
+  
+    }
+  }
+  .contactMain{
+    width: 100%;
+    @include mixin.flex(row, flex-start, center);
+  
+    img {
+      position: relative;
+      bottom: 172px;
+    }
+    /* Tablet */
+    @media only screen and (max-width: map_get(variables.$breakpoints, 'tablet')) {
       img {
         position: relative;
-        bottom: 200px;
+        bottom: 40px;
+        width: 300px;
       }
   
     }
   
-}
+      /* Desktop */
+      @media only screen and (min-width: map_get(variables.$breakpoints, 'desktop')) {
+        width: 100%;
+        @include mixin.flex(row, flex-start, center);
+      
+        img {
+          position: relative;
+          bottom: 172px;
+        }
+    
+      }
+    
+  }
 
+   /* Tablet */
+   @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
+margin-top: 0;
+padding-top: 0;
+
+  }
+
+}  

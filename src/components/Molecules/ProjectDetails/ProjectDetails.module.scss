@@ -6,7 +6,7 @@
 .container{
     @include mixin.flex(column, unset, unset, 40px);
     width: 100%;
-    text-align: initial;
+    text-align: justify;
     padding-bottom: 20px;
     padding-top: 20px;
 

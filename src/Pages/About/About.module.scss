@@ -3,11 +3,11 @@
 
 /* MOBILE FIRST */
 .main {
-  padding-top: 60px;
   width: 100%;
   text-align: center;
   height: 100%;
   @include mixin.flex(column, unset, unset, 30px);
+  margin-top: 75px;
   .aboutTitle{
     width: 100%
   }
@@ -23,12 +23,22 @@
     .skillCards {
       border-radius: 10px;
       padding: 10px;
-      width: 170px;
+      width: 140px;
     }
   }
 
   /* MIN-TABLET */
   @media only screen and (min-width: map_get(variables.$breakpoints, 'min-tablet')) {
     padding-top: 0;
+  margin-top: 0;
+  .skillCardsContainer {
+
+  
+  .skillCards {
+
+    width: 170px;
+  }
+}
+
   }
 }

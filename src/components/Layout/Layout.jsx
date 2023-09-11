@@ -13,6 +13,7 @@ const Footer = lazy(() => import('../Atoms/Footer/Footer'));
 function MyApp() {
   const theme = useTheme();
   const isMobile = useMediaQuery(BREAKPOINTS.mobile);
+  const isMinMobile = useMediaQuery(BREAKPOINTS.minMobile);
 
   // xs: un objeto donde se le puede mandar cualquier propiedad de css
   return (
@@ -37,7 +38,7 @@ function MyApp() {
       }}
     >
       <Navbar />
-      <SocialMediaBar />
+      {!isMinMobile && <SocialMediaBar />}
       <div
         style={{
           padding: isMobile ? '10px 20px' : '10px 90px',
