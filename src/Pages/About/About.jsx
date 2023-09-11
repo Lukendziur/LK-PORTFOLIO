@@ -32,7 +32,7 @@ const About = () => {
                 mode === 'dark' ? cardsBgDark.main : cardsBgLight.main,
             }}
           >
-            <img src={`/assets/${skill.iconPath}`} alt={skill.alt} />
+            <img src={`../../assets/${skill.iconPath}`} alt={skill.alt} />
             <Typography>{t(skill.title)}</Typography>
           </article>
         ))}
