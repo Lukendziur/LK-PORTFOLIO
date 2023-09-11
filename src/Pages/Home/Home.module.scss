@@ -11,14 +11,105 @@
     @include mixin.flex(unset, center, center, 20px);
 
     .userBg {
+      background: var(--gradient);
       width: 100%;
       height: 360px;
-      background: var(--gradient);
       border-radius: 80px;
+      position: relative;
+        transition-duration: .3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: .6s;
+        animation-direction: normal;
+        animation-delay: 0ms;
+        overflow: hidden;
+
+         .div1{
+          animation-delay: 4s;
+          background-color: rgb(83, 212, 255);
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 12rem;
+          height: 12rem;
+          left: 19rem;
+          position: absolute;
+          bottom: -5rem;
+          opacity: 1;
+      
+          filter: blur(24px);
+          border-radius: 50%;
+      
+      
+        }
+        .div2{
+          animation-delay: 2.5s;
+          background-color: rgb(23, 159, 255);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          right: 0;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+      
+        }
+        .div3{
+          animation-delay: 0.75s;
+          background-color: rgb(45, 142, 211);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          top: 6rem;
+          left: 0;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+        }
+        .div4{
+          animation-delay: 0.75s;
+          background-color: rgb(45, 142, 211);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          top: 20rem;
+          left: 0;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+        }
+        .div5{
+          animation-delay: 0.75s;
+          background-color: rgb(45, 142, 211);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          top: 2rem;
+          left: 263px;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+        }
+
+
 
       img {
         width: 100%;
         max-width: 367px;
+        z-index: 1;
+        position: inherit;
+
       }
     }
   }
@@ -39,14 +130,103 @@
         display: flex;
         width: 46%;
         height: 482px;
-        background: var(--gradient);
         border-radius: 80px 0px 80px 80px;
         position: absolute;
         right: 0;
         top: 121px;
+        transition-duration: .3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: .6s;
+        animation-direction: normal;
+        animation-delay: 0ms;
+        overflow: hidden;
+
+
+        .div1{
+          animation-delay: 4s;
+          background-color: rgb(83, 212, 255);
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 12rem;
+          height: 12rem;
+          left: 19rem;
+          position: absolute;
+          bottom: -5rem;
+          opacity: 1;
+      
+          filter: blur(24px);
+          border-radius: 50%;
+      
+      
+        }
+        .div2{
+          animation-delay: 2.5s;
+          background-color: rgb(23, 159, 255);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          right: 0;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+      
+        }
+        .div3{
+          animation-delay: 0.75s;
+          background-color: rgb(45, 142, 211);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          top: 6rem;
+          left: 0;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+        }
+        .div4{
+          animation-delay: 0.75s;
+          background-color: rgb(45, 142, 211);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          top: 20rem;
+          left: 0;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+        }
+        .div5{
+          animation-delay: 0.75s;
+          background-color: rgb(45, 142, 211);
+          opacity: 1;
+          --tw-bg-opacity: 1;
+          animation: bubble 5s infinite;
+          width: 13rem;
+          height: 13rem;
+          top: 2rem;
+          left: 263px;
+          position: absolute;
+          bottom: 3rem;
+          filter: blur(24px);
+          border-radius: 50%;
+        }
+
         img {
           max-width: 500px;
           margin: 0 auto;
+          z-index: 1;
+        position: initial;
+
         }
       }
     }
@@ -54,78 +234,18 @@
   
   
 }
-.divsParent{
-  transition-duration: .3s;
-  position: relative;
-  width: 400px;
-  height: 400px;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-duration: .6s;
-  animation-direction: normal;
-  animation-delay: 0ms;
-  overflow: hidden;
-  border-radius: 9999px;
 
-  .div1{
-    animation-delay: 4s;
-    background-color: rgb(83, 212, 255);
-    --tw-bg-opacity: 1;
-    animation: bubble 5s infinite;
-    width: 12rem;
-    height: 12rem;
-    left: 4rem;
-    position: absolute;
-    bottom: -5rem;
-    opacity: 1;
-
-    filter: blur(24px);
-    border-radius: 50%;
-
-
-  }
-  .div2{
-    animation-delay: 2.5s;
-    background-color: rgb(23, 159, 255);
-    opacity: 1;
-    --tw-bg-opacity: 1;
-    animation: bubble 5s infinite;
-    width: 13rem;
-    height: 13rem;
-    right: 0;
-    position: absolute;
-    bottom: 3rem;
-    filter: blur(24px);
-    border-radius: 50%;
-
-  }
-  .div3{
-    animation-delay: 0.75s;
-    background-color: rgb(45, 142, 211);
-    opacity: 1;
-    --tw-bg-opacity: 1;
-    animation: bubble 5s infinite;
-    width: 13rem;
-    height: 13rem;
-    top: 6rem;
-    left: 0;
-    position: absolute;
-    bottom: 3rem;
-    filter: blur(24px);
-    border-radius: 50%;
-  }
-  @keyframes bubble{
-    0% {
-      transform: translate(0) scale(1);
-    }
-    33% {
-   transform:   translate(20px,-50px) scale(.8);
-    }
-    66% {
-      transform: translate(40px,-70px) scale(1.2);
-    }
-    100% {
-      transform: translate(0) scale(1);
-    }
-  }
-}
+        @keyframes bubble{
+          0% {
+            transform: translate(0) scale(1);
+          }
+          33% {
+         transform:   translate(20px,-50px) scale(.8);
+          }
+          66% {
+            transform: translate(40px,-70px) scale(1.2);
+          }
+          100% {
+            transform: translate(0) scale(1);
+          }
+        }
