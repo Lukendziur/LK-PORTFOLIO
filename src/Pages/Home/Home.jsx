@@ -1,7 +1,8 @@
 // Internal
 import PaperCards from '../../components/Molecules/PaperCards/PaperCards';
 import Titles from '../../components/Molecules/Titles/Titles';
-import Avatar from './../../assets/hello-avatar.png';
+// import Avatar from './../../assets/hello-avatar.png';
+import Avatar from './../../../public/assets/hello-avatar.png';
 
 // Styles
 import styles from './Home.module.scss';

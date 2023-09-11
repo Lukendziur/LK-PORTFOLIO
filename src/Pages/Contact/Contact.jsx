@@ -5,7 +5,7 @@ import { useMediaQuery } from '@mui/material';
 import ContactForm from '../../components/Molecules/ContactForm/ContactForm';
 import Titles from '../../components/Molecules/Titles/Titles';
 import { BREAKPOINTS } from '../../constants/constants';
-import Avatar from './../../assets/callme-avatar.png';
+import Avatar from './../../../public/assets/callme-avatar.png';
 
 // Styles
 import styles from './Contact.module.scss';
