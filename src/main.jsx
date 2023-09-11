@@ -11,8 +11,8 @@ import global_en from './translations/en/global.json';
 import DataProvider from './context/ColorModeContext/DataProvider.jsx';
 
 // Styles
-import '@fontsource/Poppins/400.css';
-import '@fontsource/Poppins/500.css';
+import '@fontsource/poppins';
+
 import { CssBaseline } from '@mui/material';
 
 i18next.init({
