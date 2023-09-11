@@ -11,9 +11,9 @@ import global_en from './translations/en/global.json';
 import DataProvider from './context/ColorModeContext/DataProvider.jsx';
 
 // Styles
-import { CssBaseline } from '@mui/material';
 import '@fontsource/Poppins/400.css';
 import '@fontsource/Poppins/500.css';
+import { CssBaseline } from '@mui/material';
 
 i18next.init({
   interpolation: { escapeValue: false },
