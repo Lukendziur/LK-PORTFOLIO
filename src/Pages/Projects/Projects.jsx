@@ -71,7 +71,8 @@ const Projects = () => {
                     >
                       <div>
                         <Typography
-                          variant="h5"
+                          fontSize={24}
+                          variant="h3"
                           fontWeight={500}
                           color={
                             mode === 'dark'
