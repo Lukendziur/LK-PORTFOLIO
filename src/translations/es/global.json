@@ -46,7 +46,7 @@
     "form-name": "Nombre",
     "form-subject": "Asunto",
     "form-message": "Mensaje",
-    "form-required": "{{fieldName}} es requerido",
+    "form-required": "El campo {{fieldName}} es requerido",
     "form-button": "ENVIAR MENSAJE",
     "form-gmail-button": "DESDE GMAIL",
     "form-email-format": "El valor ingresado no corresponde al formato email"
