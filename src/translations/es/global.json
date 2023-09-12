@@ -14,24 +14,24 @@
 
     "job-title": "Desarrolladora Front-End",
     "name": "Lucila V. Kendziur",
-    "resume": "Hola! Soy Lu, front end developer de Argentina. Disfruto mucho desarrollando interfaces de usuario accesibles a todos los usuarios. Me encanta poder aprender y compartir mis conocimientos con el equipo. El trabajo en equipo, la documentación del código y la accesibilidad son tres cosas muy importantes para mi.",
+    "resume": "¡Hola! Soy Lu, desarrolladora front-end de Argentina. Me destaco por desarrollar interfaces de usuarios accesibles a todos. Me encanta enfrentarme a desafíos que me permitan aprender todos los días un poco más. El trabajo el equipo, la documentación de código y la accesibilidad, son tres pilares muy importantes para mi trabajo.",
     "card-title-1": "DATO CURIOSO",
     "card-title-2": "OTROS DATOS",
     "card-title-3": "SOBRE MI",
     "card-description-1": "Además de ser programadora, soy Licenciada en Ciencia Política por la Universidad Nacional de Rosario.",
-    "card-description-2": "Comencé mi carrera en sistemas accidentalmente en la Universidad, cuando en un proyecto grupal hice la parte funcional de una app.",
-    "card-description-3": "Me gustan mucho los gatos y tengo dos. Además me encanta practicar trekking y trabajar en equipo."
+    "card-description-2": "Descubrí mi pasión en sistemas en la universidad, realizando la parte funcional de una app.",
+    "card-description-3": "Me gustan muchos los gatos. Saul y Sultán son mis grandes compañeros de oficina."
   },
   "about": {
     "initialTitle": "Historia y Habilidades",
     "title": "Sobre mi",
-    "description": "Comencé en el mundo del desarrollo de software en 2021 como NetSuite Developer, lo cual me permitió tener una base muy fuerte en JavaScript vanilla y comprender muy a fondo la relación entre cliente y servidor. A mediados del 2022 comencé a trabajar como Frontend Developer, creando interfaces de usuario accesibles y centradas en el usuario. Como desarrolladora, me gusta asegurarme por la calidad del código entregado, la documentación y el bienestar del equipo.",
+    "description": "Comencé en el mundo del desarrollo de software en el 2021 como NetSuite Developer, lo que me permitió tener una base muy fuerte en JavaScript vanilla y comprender la estrecha relación entre cliente y servidor. En 2022 decidí emprender un nuevo desafío en el mundo del desarrollo y por eso comencé a trabajar como Frontend Developer, creando interfaces accesibles centradas en el usuario. Como desarrolladora, me gusta asegurar la calidad del código entrega, la documentación y el bienestar del equipo.",
     "skills": "Skills"
   },
   "project": {
     "initialTitle": "Aplicación de Habilidades",
     "title": "Proyectos",
-    "description": "Esta sección muestra mis proyectos más recientes. Los mismos se componen de tres partes que me parece importante mencionar: Descripción del proyecto, patrones de diseño utilizados, tecnologías utilizadas y enlaces a live demo y github. Sin embargo, estos proyectos son apenas una parte de todo lo que puedo hacer, ya que los mismos son proyectos personales que hago cada algunos meses cuando tengo tiempo o cuando necesito aprender a utilizar una nueva herramienta para mi trabajo.",
+    "description": "Esta sección muestra mis proyectos más recientes. Son proyectos personales que desarrollo en mis tiempos libres y me permiten aprender nuevas herramientas que utilizo en mi trabajo. Lo que muestro, es una pequeña parte de todo lo que puedo hacer. En cada proyecto encontrarás una descripción del mismo, los patrones de diseño empleados y las tecnologías utilizadas.",
     "details-button": "Ver detalle",
     "description-title": "DESCRIPCIÓN",
     "pattern-design-title": "PATRONES DE DISEÑO",
@@ -42,7 +42,7 @@
   "contact": {
     "initialTitle": "¡Sigamos en contacto!",
     "title": "Contacto",
-    "description": "Podemos estar en contacto a través de Linkedin, email o puedes enviarme un mensaje a través de este form y lo recibiré directamente en mi bandeja de entrada de Gmail :).",
+    "description": "Podemos seguir en contacto por email o puedes enviarme un mensaje a través de este form. Además, te invito a que sigamos conectados y puedas conocer más sobre mi trabajo a través de LinkdIn.",
     "form-name": "Nombre",
     "form-subject": "Asunto",
     "form-message": "Mensaje",
