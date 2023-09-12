@@ -13,7 +13,8 @@ import styles from './Project.module.scss';
 const Project = () => {
   const location = useLocation();
   const { filterByProject } = useData();
-  const { id } = location.state;
+  const id = location?.state?.id | 0;
+  console.log(id);
   const fields = filterByProject(id);
 
   return (
