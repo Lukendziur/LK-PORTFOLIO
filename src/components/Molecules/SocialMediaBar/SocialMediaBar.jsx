@@ -1,4 +1,5 @@
 // External
+import PropTypes from 'prop-types';
 import { IconButton, Tooltip } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -6,12 +7,13 @@ import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 // Internal
+import { LANGUAGES } from '../../../constants/constants';
+import { concatClassNames } from '../../../utils/utils';
 
 // Styles
 import styles from './SocialMediaBar.module.scss';
-import { LANGUAGES } from '../../../constants/constants';
 
-const SocialMediaBar = () => {
+const SocialMediaBar = ({ className }) => {
   const { t, i18n } = useTranslation('global');
 
   const enCV =
@@ -19,7 +21,7 @@ const SocialMediaBar = () => {
   const esCV =
     'https://drive.google.com/file/d/1BgjROEBLVaLh5pE0fPkjC7jOSgBtQsY3/view?usp=sharing';
   return (
-    <div className={styles.bar}>
+    <div className={concatClassNames(styles.bar, className)}>
       <Tooltip title={t('globals.tooltip-linkedin')} placement="right">
         <IconButton
           aria-label="Navigate to Linkedin Lucila profile"
@@ -75,3 +77,6 @@ const SocialMediaBar = () => {
 };
 
 export default SocialMediaBar;
+SocialMediaBar.propTypes = {
+  className: PropTypes.string,
+};

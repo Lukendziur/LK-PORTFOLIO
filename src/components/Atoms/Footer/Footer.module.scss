@@ -9,4 +9,15 @@
     font-weight: 500;
     color: var(--textLight);
     margin-top: auto;
+
+    .footerSocialMedia{
+        background: transparent;
+        padding: 10px;
+        flex-direction: row;
+        position: unset;
+        width: 100%;
+        height: fit-content;
+        border-radius: unset;
+
+    }
 }

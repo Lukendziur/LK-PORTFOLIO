@@ -9,7 +9,9 @@ import { blueGrey } from '@mui/material/colors';
 import ColorModeContext from './ColorModeContext';
 
 const ColorModeProvider = ({ children }) => {
-  const [mode, setMode] = useState('light');
+  const storedTheme = localStorage.getItem('theme');
+  const [mode, setMode] = useState(storedTheme ? storedTheme : 'light');
+
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -18,6 +20,7 @@ const ColorModeProvider = ({ children }) => {
     }),
     []
   );
+  localStorage.setItem('theme', mode);
 
   const palette = useMemo(
     () => ({

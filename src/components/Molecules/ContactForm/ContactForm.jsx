@@ -1,8 +1,8 @@
 // External
 import emailjs from 'emailjs-com';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { TextField, Button, Box, useMediaQuery } from '@mui/material';
+import { TextField, Button, Box, useMediaQuery, Alert } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { BREAKPOINTS } from '../../../constants/constants';
 // import { DevTool } from '@hookform/devtools';
@@ -10,6 +10,7 @@ import { BREAKPOINTS } from '../../../constants/constants';
 const ContactForm = () => {
   const { t } = useTranslation('global');
   const isDesktop = useMediaQuery(BREAKPOINTS.desktop);
+  const [message, setMessage] = useState({ error: '', success: '' });
 
   const form = useRef();
 
@@ -34,99 +35,111 @@ const ContactForm = () => {
         '8D-bp5zmXKo-bP2Md'
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           reset();
           clearErrors();
+
+          setMessage({
+            success:
+              'Recibí tu mensaje, pronto me estaré contactando contigo! :)',
+            error: '',
+          });
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          setMessage({
+            error: 'Ups! Algo falló en el envío, por favor vuelve a intentarlo',
+            success: '',
+          });
         }
       );
   };
   return (
-    <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': {
-          m: 1,
-          width: '100%',
-        },
-        width: isDesktop ? '75%' : '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-      noValidate
-      onSubmit={handleSubmit(sendEmail)}
-      ref={form}
-    >
-      <TextField
-        id="outlined-error-helper-text"
-        label={t('contact.form-name')}
-        type="text"
-        multiline
-        {...register('name', {
-          required: t('contact.form-required', {
-            fieldName: t('contact.form-name'),
-          }),
-        })}
-        error={!!errors.name}
-        helperText={errors.name?.message}
-      />
-
-      <TextField
-        id="outlined-error-helper-text"
-        label="Email"
-        type="email"
-        multiline
-        {...register('email', {
-          required: t('contact.form-required', { fieldName: 'Email' }),
-          pattern: {
-            value: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
-            message: t('contact.form-email-format'),
+    <>
+      <Box
+        component="form"
+        sx={{
+          '& .MuiTextField-root': {
+            m: 1,
+            width: '100%',
           },
-        })}
-        error={!!errors.email}
-        helperText={errors.email?.message}
-      />
-      <TextField
-        id="outlined-error-helper-text"
-        label={t('contact.form-subject')}
-        type="subject"
-        multiline
-        {...register('subject', {
-          required: t('contact.form-required', {
-            fieldName: t('contact.form-subject'),
-          }),
-        })}
-        error={!!errors.subject}
-        helperText={errors.subject?.message}
-      />
-      <TextField
-        id="outlined-error-helper-text"
-        label={t('contact.form-message')}
-        type="message"
-        multiline
-        {...register('message', {
-          required: t('contact.form-required', {
-            fieldName: t('contact.form-message'),
-          }),
-        })}
-        error={!!errors.message}
-        helperText={errors.message?.message}
-      />
-
-      <Button
-        type="submit"
-        variant="contained"
-        sx={{ background: 'var(--gradient)', padding: '10px', width: '100%' }}
+          width: isDesktop ? '75%' : '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+        noValidate
+        onSubmit={handleSubmit(sendEmail)}
+        ref={form}
       >
-        {t('contact.form-button')}
-      </Button>
+        {message.success && <Alert severity="success">{message.success}</Alert>}
+        {message.error && <Alert severity="error">{message.error}</Alert>}
+        <TextField
+          id="outlined-error-helper-text"
+          label={t('contact.form-name')}
+          type="text"
+          multiline
+          {...register('name', {
+            required: t('contact.form-required', {
+              fieldName: t('contact.form-name'),
+            }),
+          })}
+          error={!!errors.name}
+          helperText={errors.name?.message}
+        />
 
-      {/* <DevTool control={control} /> */}
-    </Box>
+        <TextField
+          id="outlined-error-helper-text"
+          label="Email"
+          type="email"
+          multiline
+          {...register('email', {
+            required: t('contact.form-required', { fieldName: 'Email' }),
+            pattern: {
+              value: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
+              message: t('contact.form-email-format'),
+            },
+          })}
+          error={!!errors.email}
+          helperText={errors.email?.message}
+        />
+        <TextField
+          id="outlined-error-helper-text"
+          label={t('contact.form-subject')}
+          type="subject"
+          multiline
+          {...register('subject', {
+            required: t('contact.form-required', {
+              fieldName: t('contact.form-subject'),
+            }),
+          })}
+          error={!!errors.subject}
+          helperText={errors.subject?.message}
+        />
+        <TextField
+          id="outlined-error-helper-text"
+          label={t('contact.form-message')}
+          type="message"
+          multiline
+          {...register('message', {
+            required: t('contact.form-required', {
+              fieldName: t('contact.form-message'),
+            }),
+          })}
+          error={!!errors.message}
+          helperText={errors.message?.message}
+        />
+
+        <Button
+          type="submit"
+          variant="contained"
+          sx={{ background: 'var(--gradient)', padding: '10px', width: '100%' }}
+        >
+          {t('contact.form-button')}
+        </Button>
+
+        {/* <DevTool control={control} /> */}
+      </Box>
+    </>
   );
 };
 
