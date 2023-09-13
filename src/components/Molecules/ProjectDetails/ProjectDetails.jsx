@@ -60,27 +60,29 @@ const ProjectDetails = ({
         </Typography>
       </div>
 
-      <div className={styles.titles}>
-        <Typography
-          fontWeight={600}
-          fontSize={20}
-          variant="h2"
-          sx={{ marginBottom: '10px' }}
-        >
-          {t('project.pattern-design-title')}
-        </Typography>
-        <Typography
-          fontWeight={400}
-          fontSize={16}
-          color={
-            mode === 'dark'
-              ? 'var(--secondaryExtraLight)'
-              : secondaryExtraDark.main
-          }
-        >
-          {patterns ? patterns : <Skeleton />}
-        </Typography>
-      </div>
+      {patterns && (
+        <div className={styles.titles}>
+          <Typography
+            fontWeight={600}
+            fontSize={20}
+            variant="h2"
+            sx={{ marginBottom: '10px' }}
+          >
+            {t('project.pattern-design-title')}
+          </Typography>
+          <Typography
+            fontWeight={400}
+            fontSize={16}
+            color={
+              mode === 'dark'
+                ? 'var(--secondaryExtraLight)'
+                : secondaryExtraDark.main
+            }
+          >
+            {patterns ? patterns : <Skeleton />}
+          </Typography>
+        </div>
+      )}
       <div className={styles.titles}>
         <Typography
           fontWeight={600}

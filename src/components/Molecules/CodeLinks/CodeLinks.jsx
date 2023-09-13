@@ -14,16 +14,18 @@ const CodeLinks = ({ github, demoLink }) => {
   const { mode, secondaryDark, secondaryExtraLight } = theme.palette;
   return (
     <div className={styles.linksContainer}>
-      <Link to={github} target="_blank" aria-label="Navigate to Github">
-        <GitHubIcon
-          sx={{
-            alignSelf: 'flex-end',
-            fontSize: '3rem',
-            color:
-              mode === 'dark' ? secondaryExtraLight.main : secondaryDark.main,
-          }}
-        />
-      </Link>
+      {github && (
+        <Link to={github} target="_blank" aria-label="Navigate to Github">
+          <GitHubIcon
+            sx={{
+              alignSelf: 'flex-end',
+              fontSize: '3rem',
+              color:
+                mode === 'dark' ? secondaryExtraLight.main : secondaryDark.main,
+            }}
+          />
+        </Link>
+      )}
 
       <Link to={demoLink} target="_blank" aria-label="Demo">
         <OndemandVideoIcon
