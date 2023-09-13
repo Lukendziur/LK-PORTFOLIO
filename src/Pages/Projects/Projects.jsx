@@ -57,9 +57,7 @@ const Projects = () => {
                       component="img"
                       alt={project.title}
                       height="140"
-                      image={String(
-                        project?.images?.map((img) => img?.desktopImg)
-                      )}
+                      image={String(project?.images[0].desktopImg)}
                     />
                     <CardContent
                       sx={{
