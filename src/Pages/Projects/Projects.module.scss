@@ -67,6 +67,10 @@
 
     .projectContainer{
         @include mixin.flex(row, center, center, 30px);
+        .card {
+            height: 330px;
+
+        }
     }
 
 
