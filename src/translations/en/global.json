@@ -13,24 +13,24 @@
     },
     "job-title": "Front-End Developer",
     "name": "Lucila V. Kendziur",
-    "resume": "Hi! I'm Lu, a front-end developer from Argentina. I stand out for developing user interfaces accessible to everyone. I love to face challenges that allow me to learn a little more every day. Teamwork, code documentation, and accessibility are three very important pillars of my work.",
+    "resume": "Hi! I'm Lu, a front-end developer from Argentina. I relish when facing challenges as they allow me to learn a little more every day. Teamwork, code documentation, and accessibility are the three utmost important pillars of my work. Furthermore, I believe that I stand out for developing user interfaces that are accessible to everyone as in this ever growing world it is even more important to enable people with diverse abilities and methods to access effectively and efficiently breaking down the barriers.",
     "card-title-1": "FUN FACT",
     "card-title-2": "OTHER FACTS",
     "card-title-3": "ABOUT ME",
     "card-description-1": "In addition to being a programmer, I have a degree in Political Science from the National University of Rosario.",
-    "card-description-2": "I discovered my passion for systems in college, doing the functional part of an app.",
-    "card-description-3": "I like cats a lot. Saul and Sultan are my great office companions."
+    "card-description-2": "I discovered my passion for systems in college, while doing the functional part of an app.",
+    "card-description-3": "I’m a cat enthusiast. Saul and Sultan are my great office companions."
   },
   "about": {
     "initialTitle": "Story and Skills",
     "title": "About",
-    "description": "I started in the world of software development in 2021 as a NetSuite Developer, which allowed me to have a very strong foundation in vanilla JavaScript and understand the close relationship between client and server. In 2022 I decided to take on a new challenge in the development world and so I started working as a Frontend Developer, creating accessible user-centric interfaces. As a developer, I like to ensure the quality of code delivery, documentation, and the well-being of the team.",
+    "description": "I started in the world of software development in 2021 as a NetSuite Developer, which allowed me to have a very strong foundation in vanilla JavaScript and understand the close relationship between client and server. In 2022 I decided to take on a new challenge in the development world and thus I started working as a Frontend Developer, creating accessible user-centric interfaces. As a developer, I like to ensure the quality of code delivery, documentation, and the well-being of the team.    ",
     "skills": "Skills"
   },
   "project": {
     "initialTitle": "Skills Application",
     "title": "Projects",
-    "description": "This section shows my most recent projects. They are personal projects that I develop in my free time and allow me to learn new tools that I use in my work. What I show, is a small part of everything I can do. In each project, you will find a description of the project, the design patterns used, and the technologies used.",
+    "description": "This section shows my most recent projects. They are personal projects that I’ve been developing in my free time. Additionally, they allow me to learn new tools that I actively use in my work. Below is only a small part of my capabilities, knowledge and growth so far. In each project, you will find a description of the project, the design patterns and the technologies used.    ",
     "details-button": "See details",
     "description-title": "DESCRIPTION",
     "pattern-design-title": "PATTERN DESIGN",
@@ -41,7 +41,7 @@
   "contact": {
     "initialTitle": "Let's keep in touch!",
     "title": "Contact",
-    "description": "We can keep in touch by email or you can send me a message through this form. Also, I invite you to stay connected and learn more about my work through LinkedIn.",
+    "description": "We can keep in touch by email or you can send me a message through this form. Also, I invite you to stay connected and learn more about my work through LinkedIn.    ",
     "form-name": "Name",
     "form-subject": "Subject",
     "form-message": "message",

@@ -50,7 +50,7 @@ const Titles = ({ initialTitle, principalTitle, description, className }) => {
       <Typography
         variant="h3"
         lineHeight={2}
-        fontSize={isMobile ? 14 : 18}
+        fontSize={isMobile ? 14 : 16}
         textAlign="justify"
         color={
           mode === 'light'

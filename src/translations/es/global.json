@@ -14,7 +14,7 @@
 
     "job-title": "Desarrolladora Front-End",
     "name": "Lucila V. Kendziur",
-    "resume": "¡Hola! Soy Lu, desarrolladora front-end de Argentina. Me destaco por desarrollar interfaces de usuarios accesibles a todos. Me encanta enfrentarme a desafíos que me permitan aprender todos los días un poco más. El trabajo en equipo, la documentación de código y la accesibilidad, son tres pilares muy importantes para mi trabajo.",
+    "resume": "Hola! Soy Lu, desarrolladora front-end viviendo en Argentina. Disfruto mucho enfrentarme a desafíos que me hacen salir de mi zona de confort y aprender un poco más cada día. El trabajo en equipo, la documentación y la accesibilidad son los tres pilares más importantes de mi trabajo. Por otro lado, me destaco por desarrollar interfaces de usuario accesibles, ya que considero que en este mundo en constante avance tecnológico es fundamental que todas las personas puedan acceder y navegar de manera efectiva y eficiente en la web.",
     "card-title-1": "DATO CURIOSO",
     "card-title-2": "OTROS DATOS",
     "card-title-3": "SOBRE MI",
@@ -31,7 +31,7 @@
   "project": {
     "initialTitle": "Aplicación de Habilidades",
     "title": "Proyectos",
-    "description": "Esta sección muestra mis proyectos más recientes. Son proyectos personales que desarrollo en mis tiempos libres y me permiten aprender nuevas herramientas que utilizo en mi trabajo. Lo que muestro, es una pequeña parte de todo lo que puedo hacer. En cada proyecto encontrarás una descripción del mismo, los patrones de diseño empleados y las tecnologías utilizadas.",
+    "description": "Esta sección muestra mis proyectos más recientes. Son proyectos personales que voy desarrollando en mis tiempos libres y me permiten adquirir nuevas herramientas que utilizo en mi trabajo. En los proyectos podes encontrar la descripción del mismo, los patrones de diseño empleados y las tecnologías utilizadas.",
     "details-button": "Ver detalle",
     "description-title": "DESCRIPCIÓN",
     "pattern-design-title": "PATRONES DE DISEÑO",
