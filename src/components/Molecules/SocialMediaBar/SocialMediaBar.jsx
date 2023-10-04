@@ -17,9 +17,9 @@ const SocialMediaBar = ({ className }) => {
   const { t, i18n } = useTranslation('global');
 
   const enCV =
-    'https://drive.google.com/file/d/1orXF8P8V4v-sJ6AnaqynMW0oLV7VEgZK/view?usp=sharing';
+    'https://drive.google.com/file/d/19r0dMXunIogfnG5ODewuqo0o-Ze9sJS3/view?usp=sharing';
   const esCV =
-    'https://drive.google.com/file/d/1BgjROEBLVaLh5pE0fPkjC7jOSgBtQsY3/view?usp=sharing';
+    'https://drive.google.com/file/d/1Q6d3BuiaHzTnOS5feJuqZ5Zj2Wr-F0O7/view?usp=sharing';
   return (
     <div className={concatClassNames(styles.bar, className)}>
       <Tooltip title={t('globals.tooltip-linkedin')} placement="right">
