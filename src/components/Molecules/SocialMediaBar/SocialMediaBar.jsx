@@ -61,9 +61,7 @@ const SocialMediaBar = ({ className }) => {
           className={styles.button}
         >
           <Link
-            to={
-              'https://mail.google.com/mail/u/0/?fs=1&to=lukendziur@gmail.com&tf=cm'
-            }
+            to={'mailto:lukendziur@gmail.com'}
             target="_blank"
             className={styles.link}
             aria-label="Send me an email"
